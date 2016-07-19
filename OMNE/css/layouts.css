@@ -1,0 +1,65 @@
+div.omnesite {
+    width: 975px;
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.topmenu {
+    height: 61px;
+	text-align: right;
+}
+
+.omnelogo {
+    height: 123px;
+	background: url(../images/omnelogo.png) no-repeat;
+}
+
+.omneslide {
+}
+
+.leftmiddle {
+    width: 344px;
+	background: url(../images/leftmiddlebg.png) no-repeat;
+}
+
+.middlemenu {
+    background: url(../images/middlemenubg.png) no-repeat;
+	height: 40px;
+}
+
+.leftmodule {
+    width: 344px;
+}
+
+#leftmod {
+    padding-left: 8px;
+}
+
+.leftmodtop {
+    background: url(../images/leftmodtop.png) no-repeat;
+	width: 323px;
+	height: 13px;
+}
+
+.leftmodbg {
+    background: url(../images/leftmodbg.png);
+	width: 323px;
+}
+
+.leftmodbottom {
+    background: url(../images/leftmodbottom.png) no-repeat;
+	width: 323px;
+	height: 13px;
+	margin-top: -13px;
+	padding-bottom: 5px;
+}
+
+.omnecontent {
+}
+
+.midmenu {
+    margin-left: -40px;
+	margin-top: -2px;
+}

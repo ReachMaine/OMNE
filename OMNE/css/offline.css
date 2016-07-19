@@ -1,0 +1,361 @@
+html.body{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin-top: 0px;
+	background-color: #CCCCFF;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #545454;
+	margin-top: 0px;
+	background-color: #CCCCCC;
+}
+
+.omnelogo {
+    height: 123px;
+	background: url(../images/omnelogo.png) no-repeat;
+}
+
+img  { border: 0 none; }
+
+/* -- id styles ------------------------------------- */
+
+#frame {
+	margin: 20px auto;
+	width: 600px;
+	padding: 0px;
+	border: 1px solid #006600;
+}
+
+#frame form {
+	text-align: left;
+}
+
+/* -- class styles ---------------------------------- */
+
+.outline {
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  padding: 2px;
+  text-align: center;
+}
+
+/* -- form styles ----------------------------------- */
+
+form    { margin: auto; }
+form p  { margin: 0; padding: 0; }
+form fieldset { border: 0 none; margin: 0em; padding: 0.2em;}
+label         { display: block; float: left; }
+input 		  { padding: 1px; }
+input.button  { width: auto; height: 1.8em; cursor: pointer; }
+
+label   { margin: 5px 0px 2px 0px; width: 10em;}
+form p  { padding: 0.2em 0 0.2em 0; }
+form br  { display: none; }
+input    { border: 1px solid #0E67A1; }
+input.button 		 { background-color: white; }
+input.button:hover { border-color:  #FC902E; }
+
+
+
+#frmlogin	      { margin: 0 10px 0 10px;  }
+#frmlogin fieldset.button { text-align: right; }
+
+
+
+/* Custom Ellsworth site CSS */
+.window {
+    background-color: #000000;
+	width: 175px;
+}
+
+.middle {
+    background: url(../images/ells-mid.png);
+    background-color: #ffffff;
+	width: 721px;
+	text-align: left;
+}
+
+.white {
+    background: url(../images/ells_white.jpg);
+}
+
+.newsflash1 {
+    width: 250px;
+	height: 124px;
+	background-color: #A2B6C4;
+	text-align: left;
+}
+
+.newsflash2 {
+    width: 153px;
+	background-color: #D1E3EC;
+}
+
+.left {
+    background: url(../images/ells_02.png);
+	width: 32px;
+}
+
+.right {
+    background: url(../images/ells_05.png);
+	width: 25px;
+}
+
+.window {
+    background-color: #000000;
+	width: 175px;
+}
+
+.footer {
+    background-color: #8CA5B6;
+	padding: 2px 4px 2px 2px;
+	text-align: left;
+	color: #0C3652;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+}
+
+/* Table Control -LEFTNAV */
+table.moduletable-leftnav {
+   width: 175px;
+   text-align: left;
+}
+
+table.moduletable-leftnav th {
+    color: #ffffff;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+	height: 27px;
+	padding: 0 0 0 4px;
+	background-color: #565656;
+}
+
+table.moduletable-leftnav tr{}
+
+table.moduletable-leftnav td {
+    margin: 0;
+	padding: 0;
+}
+
+table.moduletable-leftnav ul {}
+table.moduletable-leftnav li {}
+
+table.moduletable-leftnav a:link{}
+table.moduletable-leftnav a:visited {}
+table.moduletable-leftnav a:hover {}
+table.moduletable-leftnav a:active {}
+
+.menu-leftnav { 
+    text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu-leftnav {
+    list-style: none;
+    display: inline;
+	width: 175px;
+	padding: 0 0 15px 0;
+}
+
+ul.menu-leftnav li {
+    list-style: none;
+	padding: 2px 4px 0 4px;
+}
+
+.menu-leftnav a, .menu-leftnav a:active, .menu-leftnav a:visited {
+    color: White;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+.menu-leftnav a:hover {
+    color: #ffffff;
+	text-decoration: underline;
+}
+
+/* Table Control -TOPNAV */
+table.moduletable-topnav {
+   width: 721px;
+   height: 25px;
+   text-align: right;
+}
+
+table.moduletable-topnav th {}
+
+table.moduletable-topnav tr{}
+
+table.moduletable-topnav td {}
+
+table.moduletable-topnav ul {}
+table.moduletable-topnav li {}
+
+table.moduletable-topnav a:link, table.moduletable-topnav a:visited, table.moduletable-topnav a:active {
+    color: #ffffff;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 11px 0 24px;
+}
+
+table.moduletable-topnav a:hover {
+    text-decoration: underline;
+}
+
+/* Table Control -RIGHTNAV */
+table.moduletable-rightnav {
+   width: 153px;
+   text-align: left;
+}
+
+table.moduletable-rightnav th {
+    color: #ffffff;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+	height: 25px;
+	padding: 0 0 0 4px;
+	background-color: #0C3652;
+}
+
+table.moduletable-rightnav tr{}
+
+table.moduletable-rightnav td {
+    margin: 0;
+	padding: 0;
+}
+
+table.moduletable-rightnav ul {}
+table.moduletable-rightnav li {}
+
+table.moduletable-rightnav a:link{}
+table.moduletable-rightnav a:visited {}
+table.moduletable-rightnav a:hover {}
+table.moduletable-rightnav a:active {}
+
+.menu-rightnav { 
+    text-align: left;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu-rightnav {
+    list-style: none;
+	display: inline;
+	margin: 2px 0 0 4px;
+}
+
+ul.menu-rightnav li {
+    list-style: none;
+	padding: 2px 4px 0 4px;
+}
+
+.menu-rightnav a, .menu-rightnav a:active, .menu-rightnav a:visited {
+color: 0C3652;
+text-decoration: none;
+font-size: 12px;
+font-weight: bold;
+}
+
+.menu-rightnav a:hover {
+color: #0C3652;
+}
+
+/* Table Control -RIGHTMOD */
+table.moduletable-rightmod {
+    width: 100%;
+	text-align: left;
+}
+
+table.moduletable-rightmod th {
+    color: #ffffff;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+	height: 27px;
+	padding: 0 0 0 4px;
+	background-color: #0C3652;
+}
+
+table.moduletable-rightmod tr{}
+
+table.moduletable-rightmod td {}
+
+table.moduletable-rightmod ul {}
+table.moduletable-rightmod li {}
+
+table.moduletable-rightmod a:link{}
+table.moduletable-rightmod a:visited {}
+table.moduletable-rightmod a:hover {}
+table.moduletable-rightmod a:active {}
+
+.contentpaneopen-rightmod {
+}
+
+table.contentpaneopen-rightmod a:link {
+    text-decoration: none;
+}
+
+.contentheading-rightmod {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #0C3652;
+}
+
+.latestnews-rightmod ul {}
+.latestnews-rightmod li {}
+
+.latestnews-rightmod a:link{}
+.latestnews-rightmod a:visited {}
+.latestnews-rightmod a:hover {}
+.latestnews-rightmod a:active {}
+
+.latestnews-rightmod { 
+    text-align: left;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+ul.latestnews-rightmod {
+    list-style: none;
+	display: inline;
+	margin: 2px 0 0 4px;
+}
+
+ul.latestnews-rightmod li {
+    list-style: none;
+	padding: 2px 4px 0 4px;
+}
+
+.latestnews-rightmod a, .latestnews-rightmod a:active, .latestnews-rightmod a:visited {
+color: 0C3652;
+text-decoration: none;
+font-size: 12px;
+font-weight: bold;
+}
+
+.latestnews-rightmod a:hover {
+color: #0C3652;
+}
+

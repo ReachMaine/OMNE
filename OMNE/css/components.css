@@ -1,0 +1,100 @@
+.componentheading {
+    font-family: "Raleigh BT", Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #660066;
+	text-transform: uppercase;
+}
+
+.contentheading {
+    font-family: "Raleigh BT", Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #660066;
+}
+
+.content_rating {}
+.content_vote {}
+
+.contentpagetitle {}
+a.contentpagetitle,a.contentpagetitle:link, a.contentpagetitle:visited {}
+a.contentpagetitle:hover {}
+
+.contentdescription {}
+
+.buttonheading{}
+
+.small {}
+
+.createdate {}
+.modifydate {}
+.newsfeeddate {}
+
+.contentpane {}
+
+.contentpaneopen {}
+
+.contentpaneopen_edit{}
+
+table.contenttoc {}
+
+table.contenttoc th {}
+
+table.contenttoc td {}
+
+a.toclink:hover, a.toclink:visited, a.toclink:link {}
+
+.pagenavbar{}
+.pagenavcounter{}
+
+.pagination{}
+.pagination span {}
+a.pagination  a   {} 
+a.pagination:hover {}
+
+.sectiontableheader {}
+
+.sectiontableentry1 {}
+.sectiontableentry2 {}
+.sectiontablefooter {}
+
+.category {}
+a.category:link, a.category:visited, a.category:hover  {}
+
+.blog {}
+.blog_heading {}
+
+.blog_more{}
+
+.blogsection{}
+
+.readon{}
+
+.article_separator{}
+
+.article_column{}
+
+.column_separator{}
+
+div.mosimage         {}
+div.mosimage_caption {}
+
+div.caption       {}
+div.caption img   {}
+div.caption p     {}
+
+.row1{}
+
+.title{}
+
+.author{}
+.created-date{}
+.metadata{}
+.intro{}
+.MsoNormal{}
+
+.smalldark  {}
+
+.searchintro{}
+
+.highlight {}

@@ -1,0 +1,3073 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>J CSS Designer</title>
+<link href="css/highlight_clean.css" rel="stylesheet" type="text/css" />
+
+
+ <script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_jumpMenuGo(selName,targ,restore){ //v3.0
+  var selObj = MM_findObj(selName); if (selObj) MM_jumpMenu(targ,selObj,restore);
+}
+//-->
+</script>
+</head>
+
+<body><a name="top" id="top"></a>
+<form name="form1" id="form1" style="border:hidden;">
+  <select name="Drop to Section" onchange="MM_jumpMenu('parent',this,1)">
+<option value="#top" selected="selected">Jump To Section --&gt;</option>
+    <option value="#">---- Core Components Styles -----</option>
+    <option value="#blog">Blog</option>
+    <option value="#Article Layout">Article Layout</option>
+    <option value="#Archived Article List">Archived Article List</option>
+    <option value="#Article_Layout_Open_Editor">Article_Layout_Open_Editor</option>
+    <option value="#Article Submission Layout">Article Submission Layout</option>
+    <option value="#Section Layout">Section Layout</option>
+    <option value="#Category List Layout">Category List Layout</option>
+    <option value="#User Registration">User Registration</option>
+    <option value="#User Details">User Details</option>
+    <option value="#Contact Category Layout">Contact Category Layout</option>
+    <option value="#Standard Contact Layout">Standard Contact Layout</option>
+    <option value="#News Feed Category List Layout">News Feed Category List Layout</option>
+    <option value="#News Feed Single Feed Layout">News Feed Single Feed Layout</option>
+    <option value="#Search">Search</option>
+    <option value="#Search Results">Search Results</option>
+    <option value="#Web Link Category List Layout">Web Link Category List Layout</option>
+    <option value="#Web Link Specific Links">Web Link Specific Links</option>
+    <option value="#Web Link Submission Layout">Web Link Submission Layout</option>
+    <option value="#Poll">Poll</option>
+    <option value="#Wrapper">Wrapper</option>
+    <option value="#M">---- Core Modules Styles -----</option>
+    <option value="#module style wrapper">Module Style Wrapper</option>
+    <option value="#mod_banners">Mod_banners</option>
+    <option value="#mod_breadcrumbs">Mod_breadcrumbs</option>
+    <option value="#mod_feed">Mod_feed</option>
+    <option value="#mod_latestnews">Mod_latestnews</option>
+    <option value="#mod_login">Mod_login</option>
+    <option value="#mod_mainmenu">Mod_mainmenu</option>
+    <option value="#mod_mostread">Mod_mostread</option>
+    <option value="#mod_newsflash">Mod_newsflash</option>
+    <option value="#mod_poll">Mod_poll</option>
+    <option value="#mod_related_items">Mod_related_items</option>
+    <option value="#mod_search">Mod_search</option>
+    <option value="#mod_sections">Mod_sections</option>
+    <option value="#mod_wrapper">Mod_wrapper</option>
+  </select>
+  <input type="button" name="Button1" value="Go" onclick="MM_jumpMenuGo('Drop to Section','parent',1)" />
+</form>
+<table width="70%" border="0" class="cont">
+  <tr>
+    <td width="83%">Bread Crumbs / Pathway</td>
+  </tr>
+  <tr>
+    <td>
+<div id="pathway">
+
+<span class="breadcrumbs pathway">
+
+<a href="#" class="pathway">
+Home</a> > <a href="#" class="pathway">
+breadcrumb 1</a> > <a href="#" class="pathway">
+breadcrumb 2</a></span></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Section Blog Layout,Front Page Blog Layout Style, Catagories Blog Layout Style.</td>
+  </tr>
+  <tr>
+    <td>
+    <div class="componentheading"> Blog Layout    <a name="blog" id="blog"></a> &nbsp;&nbsp;| <a href="#">Top^</a></div>
+    
+    <table class="blog" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td valign="top"> About Joomla!<br></td>
+        </tr>
+        <tr>
+          <td valign="top"></td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <table cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  
+                  <td class="article_column" valign="top" width="50%">
+                    
+                    <div class="contentpaneopen_edit" style="float: left;">
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                          <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span>                    </div>
+                    
+                    <table class="contentpaneopen">
+                      <tbody>
+                        <tr>
+                          
+                          <td class="contentheading" width="100%">
+                            
+                            <a href="#" class="contentpagetitle"> Content Layouts</a></td>
+                       
+                          <td class="buttonheading" align="right" width="100%">   
+                            <a href="#" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow">
+                              <img src="css/DESIGN_CSS_IMAGES/pdf_button.png" alt="PDF" align="top" border="0"></a></td>
+                       
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;">
+                                 <img src="css/DESIGN_CSS_IMAGES/printButton.png" alt="Print" align="top" border="0"></a></td>
+                          
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="E-mail" onclick="window.open(this.href,'win2','width=400,height=300,menubar=yes,resizable=yes'); return false;">
+                              <img src="css/DESIGN_CSS_IMAGES/emailButton.png" alt="E-mail" align="top" border="0"></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table class="contentpaneopen">
+                      <tbody>
+                        <tr>
+                          <td colspan="2" valign="top" width="70%">
+                            
+                            <span class="small"> Written by Administrator                            </span> &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                         
+                          <td colspan="2" class="createdate" valign="top">  Friday, 13 October 2006 00:33</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top">
+                            <p> Joomla! provides plenty of flexibility when displaying your web content. Whether you are using Joomla! for a blog site, news or a website for a company, you'll find one or more content styles to showcase your information. You can also change the style of content dynamically depending on your preferences. Joomla calls how a page is laid out a
+                              <strong> layout</strong>. Use the guide below to understand which layouts are available and how you might use them.                            </p>
+                            <h2> Content</h2>
+                            <p> Joomla! makes it extremely easy to add and display content. All content is placed where your mainbody tag in your template is located. There are three main types of layouts available in Joomla! and all of them can be customised via parameters. The display and parameters are set in the menu item used to display the content your working on. You create these layouts by creating a menu item and choosing how you want the content to display.                            </p>
+                            <h3> Blog layout
+                              <br></h3>
+                            <p> Blog layout will show a listing of all content items of the selected blog type (section or category) in the mainbody position of your template. It will give you the standard title, and Intro of each content article in that particular Category and/or Section. You can customise this layout via the use of the content parameters, (See Content Parameters) this is done from the menu not the section manager!                            </p>
+                            <h3> Blog Archive layout
+                              <br></h3>
+                            <p> A Blog Archive layout will give you a similar output of content as the normal Blog Display but will add at the top two dropdown boxes for Month and year plus a search button to allow users to search for all archived content from a specific month and year                            </p>
+                            <h3> Table layout
+                              <br></h3>
+                            <p> Table layout will simply give you a table of all the titles in that particular section or category. No intro will be displayed just the titles. You can set how many titles will be displayed in this table by Parameters. The table layout will also provide a filter section so that users can reorder, filter and set how many titles are listed on a single page (up to 50)                            </p>
+                            <h2> Wrapper</h2>
+                            <p> Wrappers allow you to place stand alone applications and 3rd party websites inside your Joomla! site. The content within a wrapper appears within the primary content area defined by the "mainbody" tag and allows you to display content to display them as part of your own site. A Wrapper will place an IFRAME into the content section of your website and wrap your standard template navigation around it so it appears in the same way a content item would.                            </p>
+                            <h2> Content Parameters</h2>
+                            <p> The parameters for each layout type can be found on the right hand side of the editor boxes in the menu item configuration screen. The parameters available depend largely on what kind of layout you are configuring.                            </p></td>
+                        </tr>
+                        <tr>
+                      
+                          <td colspan="2" class="modifydate">     Last Updated ( Thursday, 03 May 2007 09:36 )</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            
+                            <a href="#" class="readon"> Read more: Content Layouts</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <span class="article_separator">&nbsp;                    </span>
+                    
+                    <div class="contentpaneopen_edit" style="float: left;">
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                          <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span>                    </div>
+                    
+                    <table class="contentpaneopen">
+                      <tbody>
+                        <tr>
+                          
+                          <td class="contentheading" width="100%">
+                            
+                            <a href="#" class="contentpagetitle"> The Joomla! Community</a></td>
+                        
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow">
+                                <img src="css/DESIGN_CSS_IMAGES/pdf_button.png" alt="PDF" align="top" border="0"></a></td>
+                        
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;">
+                                <img src="css/DESIGN_CSS_IMAGES/printButton.png" alt="Print" align="top" border="0"></a></td>
+                          
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="E-mail" onclick="window.open(this.href,'win2','width=400,height=300,menubar=yes,resizable=yes'); return false;">
+                              <img src="css/DESIGN_CSS_IMAGES/emailButton.png" alt="E-mail" align="top" border="0"></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table class="contentpaneopen">
+                      <tbody>
+                        <tr>
+                          <td colspan="2" valign="top" width="70%">
+                            
+                            <span class="small"> Written by Administrator                            </span> &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                       
+                          <td colspan="2" class="createdate" valign="top">    Thursday, 12 October 2006 18:50</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top">
+                            <p>
+                              <strong> Got a question?</strong> With more than 100,000 members, the online forum at
+                              <a href="#" target="_blank"> Joomla.org</a> are a great resource for both new an experienced users. Go ahead, ask your toughest questions, the community is waiting to see what you're going to do with your Joomla! site.                            </p>
+                            <p>
+                              <strong> Do you want to show off your new Joomla website?</strong> Go ahead, we have a section dedicated to that on our forum.                            </p>
+                            <p>
+                              <strong> Do you want to join in?</strong>                            </p>
+                            <p> If you think working with Joomla! is fun, wait until you start working on it. We're passionate about helping Joomla! users make the jump to becoming contributing members of the community, so there are many ways you can help Joomla's development:                            </p>
+                            <ul>
+                              <li> Submit news about Joomla!. We syndicate all Joomla! related news on our
+                              <a href="#" title="Joomla! News Portal"> news portal</a>. If you have some Joomla! news that you would like to share with the community, please submit your short story, article, announcement or review
+                              <a href="#" title="Submit News"> here</a>.</li>
+                              <li> Report bugs and request features in our
+                              <a href="#" title="Joomla! developement trackers"> trackers</a>. Please read
+                              <a href="#"> Reporting bugs</a>, for details on how we like our bug reports served up</li>
+                              <li> Submit patches for new and/or fixed behavior. Please read
+                              <a href="#"> Submitting patches</a>, for details on how to submit a patch.</li>
+                              <li> Join the
+                              <a href="#" title="Joomla! development forums"> developer forums</a> and share your ideas for how to improve Joomla!. We're always open to suggestions, although we're likely to be skeptical of large-scale suggestions without some code to back it up.</li>
+                              <li> Join any of the
+                              <a href="#" title="Joomla! working groups"> community working groups</a> and bring your personal expertise to the Joomla! community. More info about the different working groups can be found
+                              <a href="#" title="Joomla! working groups"> here</a>.</li>
+                            </ul>
+                            <p> That's all you need to know if you'd like to join the Joomla! development community.                            </p></td>
+                        </tr>
+                        <tr>
+                         
+                          <td colspan="2" class="modifydate">  Last Updated ( Thursday, 19 July 2007 09:38 )</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            
+                            <a href="#" class="readon"> Read more: The Joomla! Community</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <span class="article_separator">&nbsp;                    </span></td>
+                  
+                  <td class="article_column column_separator" valign="top" width="50%">
+                    
+                    <div class="contentpaneopen_edit" style="float: left;">
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                          <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span>                    </div>
+                    
+                    <table class="contentpaneopen">
+                      <tbody>
+                        <tr>
+                          
+                          <td class="contentheading" width="100%">
+                            
+                            <a href="#" class="contentpagetitle"> What's New In 1.5?</a></td>
+                        
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow">
+                                <img src="css/DESIGN_CSS_IMAGES/pdf_button.png" alt="PDF" align="top" border="0"></a></td>
+                       
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;">
+                                 <img src="css/DESIGN_CSS_IMAGES/printButton.png" alt="Print" align="top" border="0"></a></td>
+                         
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="E-mail" onclick="window.open(this.href,'win2','width=400,height=300,menubar=yes,resizable=yes'); return false;">
+                               <img src="css/DESIGN_CSS_IMAGES/emailButton.png" alt="E-mail" align="top" border="0"></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table class="contentpaneopen">
+                      <tbody>
+                        <tr>
+                          <td colspan="2" valign="top" width="70%">
+                            
+                            <span class="small"> Written by Administrator                            </span> &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                         
+                          <td colspan="2" class="createdate" valign="top">  Thursday, 12 October 2006 00:13</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top">
+                            <p> As with previous releases, Joomla! provides a unified and easy-to-use framework for delivering content for websites of all kinds. To support the changing nature of the Internet and emerging web technologies, Joomla! required substantial restructuring of its core functionality and we also used this effort to simplify many challenges within the current user interface. Joomla! 1.5 has many new features.                            </p></td>
+                        </tr>
+                        <tr>
+                          
+                          <td colspan="2" class="modifydate"> Last Updated ( Thursday, 03 May 2007 09:34 )</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            
+                            <a href="#" class="readon"> Read more: What's New In 1.5?</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <span class="article_separator">&nbsp;                    </span>
+                    
+                    <div class="contentpaneopen_edit" style="float: left;">
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                          <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span>                    </div>
+                    
+                    <table class="contentpaneopen">
+                      <tbody>
+                        <tr>
+                          
+                          <td class="contentheading" width="100%">
+                            
+                            <a href="#" class="contentpagetitle"> Extensions</a></td>
+                        
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow">
+                                <img src="css/DESIGN_CSS_IMAGES/pdf_button.png" alt="PDF" align="top" border="0"></a></td>
+                          
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;">
+                              <img src="css/DESIGN_CSS_IMAGES/printButton.png" alt="Print" align="top" border="0"></a></td>
+                      
+                          <td class="buttonheading" align="right" width="100%">
+                            <a href="#" title="E-mail" onclick="window.open(this.href,'win2','width=400,height=300,menubar=yes,resizable=yes'); return false;">
+                                  <img src="css/DESIGN_CSS_IMAGES/emailButton.png" alt="E-mail" align="top" border="0"></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table class="contentpaneopen">
+                      <tbody>
+                        <tr>
+                          <td colspan="2" valign="top" width="70%">
+                            
+                            <span class="small"> Written by Administrator                            </span> &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                          
+                          <td colspan="2" class="createdate" valign="top"> Wednesday, 11 October 2006 12:00</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top">
+                          
+                          
+                            <table class="contenttoc" align="right" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <th> Article Index                                  </th>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    
+                                    <a href="#" class="toclink"> Extensions</a></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    
+                                    <a href="#" class="toclink"> Components</a></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    
+                                    <a href="#" class="toclink"> Modules</a></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    
+                                    <a href="#" class="toclink"> Plugins</a></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    
+                                    <a href="#" class="toclink"> Languages</a></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    
+                                    <a href="#" class="toclink"> All Pages</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          
+                            <div class="pagenavcounter">    Page 1 of 5                            </div>
+                            <p> Out of the box, Joomla does a great job of managing the content needed to make your website sing. But for many people, the true power of Joomla! lies in the application framework that makes it possible for thousands of developers around the world to create powerful add-ons that are called
+                              <strong> extensions</strong>. An extension is used to add capabilities to Joomla! that do not exist in the base core code. Here are just some examples of the hundreds of available extensions:                            </p>
+                            <ul>
+                              <li> Dynamic form builders</li>
+                              <li> Business or organisational directories</li>
+                              <li> Document management</li>
+                              <li> Image and multimedia galleries</li>
+                              <li> E-commerce and shopping cart engines</li>
+                              <li> Forums and chat software</li>
+                              <li> Calendars</li>
+                              <li> Email newsletters</li>
+                              <li> Data collection and reporting tools</li>
+                              <li> Banner advertising systems</li>
+                              <li> Paid subscription services</li>
+                              <li> and many, many more</li>
+                            </ul>
+                            <p> You can find more examples over at our growing
+                              <a href="#" target="_blank" title="Joomla! Extensions Directory"> Joomla! Extensions Directory</a>. Prepare to be amazed at the amount of exciting work produced by our active developer community!                            </p>
+                            <p> A useful guide to the extension site can be found at:
+                              <br>
+                              <a href="#" target="_blank" title="Guide to the Joomla! Extension site"> http://extensions.joomla.org/content/view/15/63/</a>                            </p>
+                            <h3> Types of Extensions</h3>
+                            <p> There are five types of extensions:                            </p>
+                            <ul>
+                              <li> Components</li>
+                              <li> Modules</li>
+                              <li> Templates</li>
+                              <li> Plugins</li>
+                              <li> Languages</li>
+                            </ul>
+                            <p> You can read more about the specifics of these using the links in the article table of contents (another useful feature of Joomla!) at the top right or by clicking on the next link below.
+                              <br>
+                            </p>
+                            <br>
+                            
+                            <div class="pagenavbar">
+                              <div> Prev -
+                                <a href="#"> Next &gt;&gt;</a>                              </div>
+                            </div>
+                            <br></td>
+                        </tr>
+                        <tr>
+                        
+                          <td colspan="2" class="modifydate">   Last Updated ( Thursday, 03 May 2007 09:34 )</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            
+                            <a href="#" class="readon"> Read more: Extensions</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <span class="article_separator">&nbsp;                    </span></td>
+                </tr>
+              </tbody>
+            </table></td>
+        </tr>
+        <tr>
+          <td valign="top">
+            
+            <div class="blog_more">
+              <div>
+                <strong> Read more...</strong>              </div>
+              <ul>
+                <li>
+                
+                <a class="blogsection" href="#"> Platforms and Open Standards</a></li>
+                <li>
+                
+                <a class="blogsection" href="#"> Joomla! Facts</a></li>
+                <li>
+                
+                <a class="blogsection" href="#"> Support and Documentation</a></li>
+                <li>
+                
+                <a class="blogsection" href="#"> Joomla! Overview</a></li>
+              </ul>
+            </div></td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+            <span class="pagination"> «
+              <span> Start              </span>
+              <span> Prev              </span>
+              <strong>
+                <span> 1                </span></strong>
+              <strong>
+                <a href="#" title="2"> 2</a></strong>
+              <a href="#" title="Next"> Next</a>
+              <a href="#" title="End"> End</a> »            </span>
+            <br>
+            <br></td>
+        </tr>
+        <tr>
+          <td align="center" valign="top"> Page 1 of 2</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div style="position: absolute; top: 0pt; left: 0pt; visibility: hidden;" class="tool-tip">
+      <div>      </div>
+    </div></td>
+  </tr>
+  <tr>
+    Article Layout  <a name="Article Layout" id="Article Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>  
+    <div class="contentpaneopen_edit" style="float: left;">
+      
+      <span class="hasTip">
+        <a href="#">
+          <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>      </span>    </div>
+    
+    <table class="contentpaneopen">
+      <tbody>
+        <tr>
+         
+          <td class="contentheading" width="100%"> 
+            
+            <a href="#" class="contentpagetitle"> Joomla! Facts</a></td>
+         
+          <td class="buttonheading" align="right" width="100%"> 
+            <a href="#" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow">
+              <img src="css/DESIGN_CSS_IMAGES/pdf_button.png" alt="PDF" align="top" border="0"></a></td>
+         
+          <td class="buttonheading" align="right" width="100%"> 
+            <a href="#" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;">
+              <img src="css/DESIGN_CSS_IMAGES/printButton.png" alt="Print" align="top" border="0"></a></td>
+       
+          <td class="buttonheading" align="right" width="100%">   
+            <a href="#" title="E-mail" onclick="window.open(this.href,'win2','width=400,height=300,menubar=yes,resizable=yes'); return false;">
+              <img src="css/DESIGN_CSS_IMAGES/emailButton.png" alt="E-mail" align="top" border="0"></a></td>
+        </tr>
+      </tbody>
+    </table>
+    <form method="post" action="com_content/?option=com_content&amp;view=article&amp;id=21&amp;Itemid=55">
+      
+      <span class="content_rating"> User Rating:
+        <img src="css/DESIGN_CSS_IMAGES/rating_star_blank.png" alt="" align="top" border="0">
+        <img src="css/DESIGN_CSS_IMAGES/rating_star_blank.png" alt="" align="top" border="0">
+        <img src="css/DESIGN_CSS_IMAGES/rating_star_blank.png" alt="" align="top" border="0">
+        <img src="css/DESIGN_CSS_IMAGES/rating_star_blank.png" alt="" align="top" border="0">
+        <img src="css/DESIGN_CSS_IMAGES/rating_star_blank.png" alt="" align="top" border="0"> &nbsp;/&nbsp;0      </span>
+      <br>
+      
+      <span class="content_vote"> Poor
+        <input alt="vote 1 star" name="user_rating" value="1" type="radio">
+        <input alt="vote 2 star" name="user_rating" value="2" type="radio">
+        <input alt="vote 3 star" name="user_rating" value="3" type="radio">
+        <input alt="vote 4 star" name="user_rating" value="4" type="radio">
+        <input alt="vote 5 star" name="user_rating" value="5" checked="checked" type="radio"> Best&nbsp;
+        
+        <input class="button" name="submit_vote" value="Rate" type="submit">
+      </span>
+    </form>
+    
+    <table class="contentpaneopen">
+      <tbody>
+        <tr>
+          <td colspan="2" valign="top" width="70%">
+            
+            <span class="small"> Written by Administrator            </span> &nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+          
+          <td colspan="2" class="createdate" valign="top"> Monday, 09 October 2006 18:46</td>
+        </tr>
+        <tr>
+          <td colspan="2" valign="top">
+            <p> Here are some interesting facts about Joomla!            </p>
+            <ul>
+              <li>
+              <span> Over 110,000 registered users on the Official Joomla! community site forum and more on the many international community sites.              </span>
+              <br></li>
+              <li>
+              <span> 1168 Projects on the Joomla! Forge (
+                <a href="#"> joomlacode.org</a> ). All for open source addons by third party developers.              </span></li>
+              <li>
+              <span> 1800+ extensions for Joomla! registered on the Extension site (
+                <a href="#"> extensions.joomla.org</a> )              </span></li>
+              <li>
+              <span> Joomla.org exceeds 2 TB of traffic per month!              </span></li>
+              <li>
+              <span> Alexa report [October 2006]: Joomla.org at #492 of top 500 busiest websites in the world.              </span></li>
+              <li>
+              <span> Community
+                <a href="#" title="Joomla Forum"> forums</a>, over 900,000 posts, and 190 000 activated users.              </span> Growing at over 1200 posts per day and 150 new partcipants each day!</li>
+            </ul>
+            <p>&nbsp;            </p></td>
+        </tr>
+        <tr>
+          
+          <td colspan="2" class="modifydate"> Last Updated ( Thursday, 03 May 2007 09:36 )</td>
+        </tr>
+      </tbody>
+    </table>
+    <br/>
+    <span class="article_separator">&nbsp;    </span><br/>
+    
+    <div style="position: absolute; top: 0pt; left: 0pt; visibility: hidden;" class="tool-tip">
+      <div>      </div>
+    </div></td>
+  </tr>
+  
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Archived Article List  <a name="Archived Article List" id="Archived Article List"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>
+    <form id="jForm" action="" method="post">
+      
+      <div class="componentheading">      </div>
+      <p> Filter&nbsp;
+        
+        <input name="filter" value="" class="inputbox" onchange="document.jForm.submit();" type="text">
+        
+        <select name="month" id="month" size="1" class="inputbox">
+          <option value="" selected="selected"> Month          </option>
+          <option value="01"> January          </option>
+          <option value="02"> February          </option>
+          <option value="03"> March          </option>
+          <option value="04"> April          </option>
+          <option value="05"> May          </option>
+          <option value="06"> June          </option>
+          <option value="07"> July          </option>
+          <option value="08"> August          </option>
+          <option value="09"> September          </option>
+          <option value="10"> October          </option>
+          <option value="11"> November          </option>
+          <option value="12"> December          </option>
+        </select>
+        
+        <select name="year" id="year" size="1" class="inputbox">
+          <option value="" selected="selected"> Year          </option>
+          <option value="2000"> 2000          </option>
+          <option value="2001"> 2001          </option>
+          <option value="2002"> 2002          </option>
+          <option value="2003"> 2003          </option>
+          <option value="2004"> 2004          </option>
+          <option value="2005"> 2005          </option>
+          <option value="2006"> 2006          </option>
+          <option value="2007"> 2007          </option>
+          <option value="2008"> 2008          </option>
+          <option value="2009"> 2009          </option>
+          <option value="2010"> 2010          </option>
+        </select>
+        
+        <select name="limit" id="limit" class="inputbox" size="1" onchange="this.form.submit()">
+          <option value="5"> 5          </option>
+          <option value="10"> 10          </option>
+          <option value="15"> 15          </option>
+          <option value="20" selected="selected"> 20          </option>
+          <option value="25"> 25          </option>
+          <option value="30"> 30          </option>
+          <option value="50"> 50          </option>
+          <option value="100"> 100          </option>
+          <option value="0"> All          </option>
+        </select>
+        
+        <button type="submit" class="button"> Filter        </button>
+      </p>
+      
+      <ul id="archive-list" style="list-style-type: none; list-style-image: none; list-style-position: outside;">
+        <br /><br />
+        <li class="row1">
+          
+          <h4 class="title">
+            <a href="#"> Where did the Mambots go?</a></h4>
+          
+          <h5 class="metadata">
+            
+            <span class="created-date"> Created: 2006-10-11 11:17:00            </span>
+            
+            <span class="author"> Author: Administrator            </span></h5>
+          
+          <div class="intro"> Mambots have been renamed as "Plugins" Mambots were introduced in Mambo and offered possibilities to add plugin logic to your site to mainly for the purpose of manipulating content. In Joomla!, Plugins will now have much broader capabilities than Mambots....          </div></li>
+        
+        <li class="row1">
+          
+          <h4 class="title">
+            <a href="#"> Joomla! Features</a></h4>
+          
+          <h5 class="metadata">
+            
+            <span class="created-date"> Created: 2006-10-09 01:32:45            </span>
+            
+            <span class="author"> Author: Administrator            </span></h5>
+          
+          <div class="intro">
+            <h4>
+              <font color="#ff6600"> Joomla! features:              </font></h4>
+            <ul>
+              <li> Completely database driven site engines</li>
+        <li> News, products or services sections fully editable and manageable</li>
+        <li> Topics sections can be added to by contributing authors</li>
+        <li> Ful...</li>
+      </ul>
+      </div></li>
+      </ul>
+      
+      <div id="navigation">
+        <span>
+          
+          <span class="pagination"> «
+            <span> Start            </span>
+            <span> Prev            </span>
+            <strong>
+              <span> 1              </span></strong>
+            <span> Next            </span>
+            <span> End            </span> »          </span>        </span>
+        <span> Page 1 of 1        </span>      </div>
+      </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Article_Layout_Open_Editor  <a name="Article_Layout_Open_Editor" id="Article_Layout_Open_Editor"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>  <form action="com_content/index.php" method="post" name="adminForm" onsubmit="setgood();">
+      <fieldset>
+        <legend> Editor        </legend>
+        
+        <table class="adminform" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <label for="title"> Title:                  </label>
+                  
+                  <input class="inputbox" id="title" name="title" size="50" maxlength="100" value="Joomla! Facts" type="text">
+                </div>
+                <div style="float: right;">
+                  <button type="button" onclick="submitbutton('save')"> Save                  </button>
+                  <button type="button" onclick="submitbutton('cancel')"> Cancel                  </button>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+
+          <table class="mceEditor" style="width: 100%; height: 404px;" border="0" cellpadding="0" cellspacing="0" height="404" width="100%">
+            <tbody>
+              <tr>
+                <td dir="ltr" class="mceToolbarTop" align="center" height="1" nowrap="nowrap">
+            {Editor Tool Bar}                  </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  {Editor Body}</td>
+              </tr>
+            </tbody>
+          </table>
+        </span>
+        
+        <div id="editor-xtd-buttons">
+          
+          <div class="button2-left">
+            
+            <div class="image">
+              
+              <a class="modal-button" title="Image" href="#" rel="{handler: 'iframe', size: {x: 570, y: 400}}"> Image</a>            </div>
+          </div>
+          
+          <div class="button2-left">
+            
+            <div class="pagebreak">
+              
+              <a class="modal-button" title="Pagebreak" href="#" rel="{handler: 'iframe', size: {x: 400, y: 85}}"> Pagebreak</a>            </div>
+          </div>
+          
+          <div class="button2-left">
+            
+            <div class="readmore">
+              <a title="Readmore" onclick="insertReadmore();" rel=""> Readmore</a>            </div>
+          </div>
+        </div>
+        </fieldset>
+        <fieldset>
+          <legend> Publishing          </legend>
+          
+          <table class="adminform"><tbody><tr><td><table class="adminform">
+            <tbody>
+              <tr>
+                <td class="key">
+                    <label for="label"> Section: </label></td>
+                <td>
+                    <select name="sectionid2" id="label" class="inputbox" size="1" onchange="changeDynaList( 'catid', sectioncategories, document.adminForm.sectionid.options[document.adminForm.sectionid.selectedIndex].value, 0, 0);">
+                      <option value="-1"> - Select Section - </option>
+                      <option value="0"> Uncategorized </option>
+                      <option value="4" selected="selected"> About Joomla! </option>
+                      <option value="1"> News </option>
+                      <option value="3"> FAQs </option>
+                  </select></td>
+              </tr>
+              <tr>
+                <td class="key">
+                    <label for="label2"> Category: </label></td>
+                <td>
+                    <select name="catid2" id="label2" class="inputbox" size="1">
+                      <option value="25"> The Project </option>
+                      <option value="29"> The CMS </option>
+                      <option value="30" selected="selected"> The Community </option>
+                      <option value="-1"> Select Category </option>
+                  </select></td>
+              </tr>
+              <tr>
+                <td class="key">
+                    <label for="state"> Published: </label></td>
+                <td>
+                    <input name="state" id="state2" value="0" type="radio" />
+                    <label for="state2"> No </label>
+                    
+                    <input name="state" id="state3" value="1" checked="checked" type="radio" />
+                    <label for="state3"> Yes </label></td>
+              </tr>
+              <tr>
+                <td class="key" width="120">
+                    <label for="frontpage"> Show on Front Page: </label></td>
+                <td>
+                    <input name="frontpage" id="frontpage2" value="0" checked="checked" type="radio" />
+                    <label for="frontpage2"> No </label>
+                    
+                    <input name="frontpage" id="frontpage3" value="1" type="radio" />
+                    <label for="frontpage3"> Yes </label></td>
+              </tr>
+              <tr>
+                <td class="key">
+                    <label for="label3"> Author Alias: </label></td>
+                <td>
+                    <input id="label3" name="created_by_alias2" size="50" maxlength="100" value="" class="inputbox" type="text" /></td>
+              </tr>
+              <tr>
+                <td class="key">
+                    <label for="label4"> Start Publishing: </label></td>
+                <td>
+                    <input class="inputbox" name="publish_up2" id="label4" size="25" maxlength="19" value="2006-10-07 16:00:00" type="text" />
+                  <a href="#" onclick="return showCalendar('publish_up', 'y-mm-dd');">  <img class="calendar" src="css/DESIGN_CSS_IMAGES/blank.png" alt="calendar" /></a></td>
+              </tr>
+              <tr>
+                <td class="key">
+                    <label for="label5"> Finish Publishing: </label></td>
+                <td>
+                    <input class="inputbox" name="publish_down2" id="label5" size="25" maxlength="19" value="Never" type="text" />
+                  <a href="#" onclick="return showCalendar('publish_down', 'y-mm-dd');"> <img class="calendar" src="css/DESIGN_CSS_IMAGES/blank.png" alt="calendar" /></a></td>
+              </tr>
+              <tr>
+                <td class="key" valign="top">
+                    <label for="label6"> Access Level: </label></td>
+                <td>
+                    <select name="access2" id="label6" class="inputbox" size="3">
+                      <option value="0" selected="selected"> Public </option>
+                      <option value="1"> Registered </option>
+                      <option value="2"> Special </option>
+                  </select></td>
+              </tr>
+              <tr>
+                <td class="key">
+                    <label for="ordering"> Ordering: </label></td>
+                <td>
+                    <select name="ordering2" id="ordering" class="inputbox" size="1">
+                      <option value="0"> 0 first </option>
+                      <option value="1" selected="selected"> 1 (Joomla! Facts) </option>
+                      <option value="2"> 2 (The Joomla! Community) </option>
+                      <option value="3"> 3 last </option>
+                  </select></td>
+              </tr>
+            </tbody>
+          </table></td>
+              </tr>
+          </tbody>
+          </table>
+        </fieldset>
+          <fieldset>
+            <legend> Metadata            </legend>
+            
+            <table class="adminform">
+              <tbody>
+                <tr>
+               
+                  <td class="key" valign="top">   
+                    <label for="metadesc"> Description:                    </label></td>
+                  <td>
+                    
+<textarea rows="5" cols="50" style="width: 500px; height: 120px;" class="inputbox" id="metadesc" name="metadesc">
+</textarea></td>
+                </tr>
+                <tr>
+                  
+                  <td class="key" valign="top">
+                    <label for="metakey"> Keywords:                    </label></td>
+                  <td>
+                    
+<textarea rows="5" cols="50" style="width: 500px; height: 50px;" class="inputbox" id="metakey" name="metakey">
+</textarea></td>
+                </tr>
+              </tbody>
+            </table>
+        </fieldset>
+            </form>
+    
+    <div style="display: none; z-index: 65555; position: fixed; top: 0px; left: 0px; visibility: hidden; opacity: 0;" id="sbox-overlay">    </div>
+    
+    <div style="display: none; z-index: 65557; position: fixed; top: 50%; left: 50%;" id="sbox-window">
+      
+      <a href="#" id="sbox-btn-close"></a>
+      
+      <div style="visibility: hidden; opacity: 0;" id="sbox-content">      </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Article Submission Layout  <a name="Article Submission Layout" id="Article Submission Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td> <form action="com_content/index.php" method="post" name="adminForm" onsubmit="setgood();">
+      <fieldset>
+        <legend> Editor        </legend>
+        
+        <table class="adminform" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <label for="title"> Title:                  </label>
+                  
+                  <input class="inputbox" id="title" name="title" size="50" maxlength="100" value="" type="text">
+                </div>
+                <div style="float: right;">
+                  <button type="button" onclick="submitbutton('save')"> Save                  </button>
+                  <button type="button" onclick="submitbutton('cancel')"> Cancel                  </button>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+       
+          <table class="mceEditor" style="width: 100%; height: 404px;" border="0" cellpadding="0" cellspacing="0" height="404" width="100%">
+            <tbody>
+              <tr>
+                
+                <td dir="ltr" class="mceToolbarTop" align="center" height="1" nowrap="nowrap">{Editor Toolbar}</td>
+              </tr>
+              <tr>
+                <td align="center">
+     
+                  {Editor Body}</td>
+              </tr>
+            </tbody>
+          </table>
+        </span>
+        
+        <div id="editor-xtd-buttons">
+          
+          <div class="button2-left">
+            
+            <div class="image">
+              
+              <a class="modal-button" title="Image" href="#" rel="{handler: 'iframe', size: {x: 570, y: 400}}"> Image</a>            </div>
+          </div>
+          
+          <div class="button2-left">
+            
+            <div class="pagebreak">
+              
+              <a class="modal-button" title="Pagebreak" href="#" rel="{handler: 'iframe', size: {x: 400, y: 85}}"> Pagebreak</a>            </div>
+          </div>
+          
+          <div class="button2-left">
+            
+            <div class="readmore">
+              <a title="Readmore" onclick="insertReadmore();" rel=""> Readmore</a>            </div>
+          </div>
+        </div>
+        </fieldset>
+        <fieldset>
+          <legend> Publishing          </legend>
+          
+          <table class="adminform">
+            <tbody>
+              <tr>
+               
+                <td class="key"> 
+                  <label for="sectionid"> Section:                  </label></td>
+                <td>
+                  
+                  <select name="sectionid" id="sectionid" class="inputbox" size="1" onchange="changeDynaList( 'catid', sectioncategories, document.adminForm.sectionid.options[document.adminForm.sectionid.selectedIndex].value, 0, 0);">
+                    <option value="-1"> - Select Section -                    </option>
+                    <option value="0" selected="selected"> Uncategorized                    </option>
+                    <option value="4"> About Joomla!                    </option>
+                    <option value="1"> News                    </option>
+                    <option value="3"> FAQs                    </option>
+                  </select></td>
+              </tr>
+              <tr>
+               
+                <td class="key"> 
+                  <label for="catid"> Category:                  </label></td>
+                <td>
+                  
+                  <select name="catid" id="catid" class="inputbox" size="1">
+                    <option value="0" selected="selected"> Uncategorized                    </option>
+                    <option value="-1"> Select Category                    </option>
+                  </select></td>
+              </tr>
+              <tr>
+               
+                <td class="key"> 
+                  <label for="state"> Published:                  </label></td>
+                <td>
+                  
+                  <input name="state" id="state0" value="0" type="radio">
+                  <label for="state0"> No                  </label>
+                  
+                  <input name="state" id="state1" value="1" checked="checked" type="radio">
+                  <label for="state1"> Yes                  </label></td>
+              </tr>
+              <tr>
+              
+                <td class="key" width="120">  
+                  <label for="frontpage"> Show on Front Page:                  </label></td>
+                <td>
+                  
+                  <input name="frontpage" id="frontpage0" value="0" checked="checked" type="radio">
+                  <label for="frontpage0"> No                  </label>
+                  
+                  <input name="frontpage" id="frontpage1" value="1" type="radio">
+                  <label for="frontpage1"> Yes                  </label></td>
+              </tr>
+              <tr>
+               
+                <td class="key"> 
+                  <label for="created_by_alias"> Author Alias:                  </label></td>
+                <td>
+                  
+                  <input id="created_by_alias" name="created_by_alias" size="50" maxlength="100" value="" class="inputbox" type="text"></td>
+              </tr>
+              <tr>
+               
+                <td class="key"> 
+                  <label for="publish_up"> Start Publishing:                  </label></td>
+                <td>
+                  
+                  <input class="inputbox" name="publish_up" id="publish_up" size="25" maxlength="19" value="" type="text">
+                  <a href="#" onclick="return showCalendar('publish_up', 'y-mm-dd');">
+                    
+                    <img class="calendar" src="css/DESIGN_CSS_IMAGES/blank.png" alt="calendar"></a></td>
+              </tr>
+              <tr>
+                
+                <td class="key">
+                  <label for="publish_down"> Finish Publishing:                  </label></td>
+                <td>
+                  
+                  <input class="inputbox" name="publish_down" id="publish_down" size="25" maxlength="19" value="" type="text">
+                  <a href="#" onclick="return showCalendar('publish_down', 'y-mm-dd');">
+                    
+                    <img class="calendar" src="css/DESIGN_CSS_IMAGES/blank.png" alt="calendar"></a></td>
+              </tr>
+              <tr>
+               
+                <td class="key" valign="top"> 
+                  <label for="access"> Access Level:                  </label></td>
+                <td>
+                  
+                  <select name="access" id="access" class="inputbox" size="3">
+                    <option value="0" selected="selected"> Public                    </option>
+                    <option value="1"> Registered                    </option>
+                    <option value="2"> Special                    </option>
+                  </select></td>
+              </tr>
+              <tr>
+               
+                <td class="key"> 
+                  <label for="ordering"> Ordering:                  </label></td>
+                <td>
+                  New Items default to the first place. Ordering can be changed after this Item is saved.</td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+          <fieldset>
+            <legend> Metadata            </legend>
+            
+            <table class="adminform">
+              <tbody>
+                <tr>
+                 
+                  <td class="key" valign="top"> 
+                    <label for="metadesc"> Description:                    </label></td>
+                  <td>
+                    
+<textarea rows="5" cols="50" style="width: 500px; height: 120px;" class="inputbox" id="metadesc" name="metadesc">
+</textarea></td>
+                </tr>
+                <tr>
+                 
+                  <td class="key" valign="top"> 
+                    <label for="metakey"> Keywords:                    </label></td>
+                  <td>
+                    
+<textarea rows="5" cols="50" style="width: 500px; height: 50px;" class="inputbox" id="metakey" name="metakey">
+</textarea></td>
+                </tr>
+              </tbody>
+            </table>
+        </fieldset>
+            
+    </form>
+
+    
+    <div style="display: none; z-index: 65555; position: fixed; top: 0px; left: 0px; visibility: hidden; opacity: 0;" id="sbox-overlay">    </div>
+    
+    <div style="display: none; z-index: 65557; position: fixed; top: 50%; left: 50%;" id="sbox-window">
+      
+      <a href="#" id="sbox-btn-close"></a>
+      
+      <div style="visibility: hidden; opacity: 0;" id="sbox-content">      </div>
+    </div> </td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Section Layout  <a name="Section Layout" id="Section Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>  
+    <div class="componentheading"> FAQs    </div>
+    
+    <table class="contentpane" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody>
+        <tr>
+         
+          <td class="contentdescription" colspan="2" valign="top" width="60%"> <br /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ul>
+              <li>
+              
+              <a href="#" class="category"> General</a> &nbsp;
+              
+              <span class="small"> ( 8 Articles )              </span>
+              <br> General questions about the Joomla! CMS</li>
+              <li>
+              
+              <a href="#" class="category"> Current Users</a> &nbsp;
+              
+              <span class="small"> ( 5 Articles )              </span>
+              <br> Questions that users migrating to Joomla! 1.5 are likely to raise
+              <br></li>
+              <li>
+              
+              <a href="#" class="category"> New to Joomla</a> &nbsp;
+              
+              <span class="small"> ( 3 Articles )              </span>
+              <br> Questions for new users of Joomla!
+              <br></li>
+              <li>
+              
+              <a href="#" class="category"> Languages</a> &nbsp;
+              
+              <span class="small"> ( 5 Articles )              </span>
+              <br> Questions related to localisation and languages</li>
+            </ul></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Category List Layout  <a name="Category List Layout" id="Category List Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>Defualt page
+    
+    <div class="componentheading"> General    </div>
+    
+    <table class="contentpane" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+ 
+        <tr>
+          
+          <td class="contentdescription" colspan="2" valign="top" width="60%"> General questions about the Joomla! CMS</td>
+        </tr>
+        <tr>
+          <td> Defualt page items
+
+            <form action="" method="post" name="adminForm">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td colspan="5">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td align="left" nowrap="nowrap" width="60%"> Filter&nbsp;
+                              
+                              <input name="filter" value="" class="inputbox" onchange="document.adminForm.submit();" type="text"></td>
+                            <td align="right" nowrap="nowrap" width="40%"> &nbsp;&nbsp;&nbsp;Display #&nbsp;
+                              
+                              <select name="limit" id="limit" class="inputbox" size="1" onchange="this.form.submit()">
+                                <option value="5"> 5                                </option>
+                                <option value="10"> 10                                </option>
+                                <option value="15"> 15                                </option>
+                                <option value="20"> 20                                </option>
+                                <option value="25"> 25                                </option>
+                                <option value="30"> 30                                </option>
+                                <option value="50"> 50                                </option>
+                                <option value="100"> 100                                </option>
+                                <option value="0" selected="selected"> All                                </option>
+                              </select></td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                  </tr>
+                  <tr>
+                   
+                    <td class="sectiontableheader" align="right" width="5%">  #</td>
+                 
+                    <td class="sectiontableheader" width="45%">   
+                      <a href="#" title="Click to sort by this column"> Item Title</a></td>
+                   
+                    <td class="sectiontableheader" width="25%"> 
+                      <a href="#" title="Click to sort by this column"> Date</a></td>
+                    
+                    <td class="sectiontableheader" width="20%">
+                      <a href="#" title="Click to sort by this column"> Author</a></td>
+                   
+                    <td class="sectiontableheader" align="center" nowrap="nowrap" width="5%">
+                      <a href="#" title="Click to sort by this column"> Hits</a></td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry1">
+                    <td align="right"> 1</td>
+                    <td>
+                      <a href="#"> What is uncategorised content?</a>
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                      <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a></span></td>
+                    <td> Wednesday, 11 October 2006</td>
+                    <td> Administrator</td>
+                    <td align="center"> 9</td>
+                  </tr>
+                
+                  <tr class="sectiontableentry2">
+                    <td align="right">  2</td>
+                    <td>
+                      <a href="#"> Is it possible to change the types of menu entries?</a>
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                      <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span></td>
+                    <td> Wednesday, 11 October 2006</td>
+                    <td> Administrator</td>
+                    <td align="center"> 17</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry1">
+                    <td align="right"> 3</td>
+                    <td>
+                      <a href="#"> How do I install Joomla! 1.5?</a>
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                      <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span></td>
+                    <td> Wednesday, 11 October 2006</td>
+                    <td> Administrator</td>
+                    <td align="center"> 5</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry2">
+                    <td align="right"> 4</td>
+                    <td>
+                      <a href="#"> What are the requirements to run Joomla! 1.5?</a>
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                      <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span></td>
+                    <td> Wednesday, 11 October 2006</td>
+                    <td> Administrator</td>
+                    <td align="center"> 24</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry1">
+                    <td align="right"> 5</td>
+                    <td>
+                      <a href="#"> My MySql database does not support UTF-8. Do I have a problem?</a>
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                      <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span></td>
+                    <td> Saturday, 07 October 2006</td>
+                    <td> Administrator</td>
+                    <td align="center"> 8</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry2">
+                    <td align="right"> 6</td>
+                    <td>
+                      <a href="#"> Can Joomla! 1.5 operate with PHP Safe Mode On?</a>
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                      <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span></td>
+                    <td> Friday, 06 October 2006</td>
+                    <td> Administrator</td>
+                    <td align="center"> 7</td>
+                  </tr>
+                
+                  <tr class="sectiontableentry1">
+                    <td align="right">   7</td>
+                    <td>
+                      <a href="#"> What is the FTP layer for?</a>
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                      <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span></td>
+                    <td> Friday, 06 October 2006</td>
+                    <td> Administrator</td>
+                    <td align="center"> 22</td>
+                  </tr>
+                
+                  <tr class="sectiontableentry2">
+                    <td align="right">   8</td>
+                    <td>
+                      <a href="#"> Why does Joomla! 1.5 use utf-8 encoding?</a>
+                      
+                      <span class="hasTip">
+                        <a href="#">
+                      <img src="css/DESIGN_CSS_IMAGES/edit.png" alt="edit" align="top" border="0"></a>                      </span></td>
+                    <td> Thursday, 05 October 2006</td>
+                    <td> Administrator</td>
+                    <td align="center"> 28</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">&nbsp; </td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="4" class="sectiontablefooter" align="center">
+                      
+                      <span class="pagination"> «
+                        <span> Start                        </span>
+                        <span> Prev                        </span>
+                        <strong>
+                          <a href="#" title="1"> 1</a></strong>
+                        <span> Next                        </span>
+                      <span> End                        </span> »                      </span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" align="right"> Page 1 of 1</td>
+                  </tr>
+              </table>
+            </form>
+            <a href="#" title="New">
+              <img src="css/DESIGN_CSS_IMAGES/new.png" alt="New" align="top" border="0"></a></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div style="position: absolute; top: 0pt; left: 0pt; visibility: hidden;" class="tool-tip">
+      <div>      </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td>User Details  <a name="User Details" id="User Details"></a> &nbsp;&nbsp;| <a href="#">Top^</a>
+</td>
+  </tr>
+  <tr>
+    <td>
+<!--START CUT-->
+
+<form action="com_content/index.php" method="post" name="userform" autocomplete="off">
+
+<div class="componentheading">
+Edit Your Details</div>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="120">
+<label for="name">
+Your Name:</label></td>
+<td>
+
+  <input class="inputbox" id="name" name="name" value="Administrator" size="40" type="text"></td>
+</tr>
+<tr>
+<td>
+<label for="email">
+E-mail:</label></td>
+<td>
+
+  <input class="inputbox" id="email" name="email" value="admin@localhost.com" size="40" type="text"></td>
+</tr>
+<tr>
+<td>
+<label for="username">
+User Name:</label></td>
+<td>
+
+  <input class="inputbox" id="username" name="username" value="admin" size="40" type="text"></td>
+</tr>
+<tr>
+<td>
+<label for="password">
+Password:</label></td>
+<td>
+
+  <input class="inputbox" id="password" name="password" value="" size="40" type="password"></td>
+</tr>
+<tr>
+<td>
+<label for="password2">
+Verify Password:</label></td>
+<td>
+
+  <input class="inputbox" id="password2" name="password2" size="40" type="password"></td>
+</tr>
+</tbody>
+</table>
+
+<table class="paramlist admintable" cellspacing="1" width="100%">
+<tbody>
+<tr>
+
+<td class="paramlist_key" width="40%">
+
+<span class="editlinktip">
+
+<label id="paramsadmin_language-lbl" for="paramsadmin_language" class="hasTip" title="Back-end Language:::Default Language for the Administrator Back-end">
+Back-end Language:</label>
+</span></td>
+
+<td class="paramlist_value">
+
+<select name="params[admin_language]" id="paramsadmin_language" class="inputbox">
+  <option value="" selected="selected">
+- Select Language -  </option>
+  <option value="en-GB">
+English (United Kingdom)  </option>
+</select></td>
+</tr>
+<tr>
+
+<td class="paramlist_key" width="40%">
+
+<span class="editlinktip">
+
+<label id="paramslanguage-lbl" for="paramslanguage" class="hasTip" title="Front-end Language:::Default Language for the Site Front-end">
+Front-end Language:</label>
+</span></td>
+
+<td class="paramlist_value">
+
+<select name="params[language]" id="paramslanguage" class="inputbox">
+  <option value="" selected="selected">
+- Select Language -  </option>
+  <option value="en-GB">
+English (United Kingdom)  </option>
+</select></td>
+</tr>
+<tr>
+
+<td class="paramlist_key" width="40%">
+
+<span class="editlinktip">
+
+<label id="paramseditor-lbl" for="paramseditor" class="hasTip" title="User Editor:::WYSYWYG Editor for this User">
+User Editor:</label>
+</span></td>
+
+<td class="paramlist_value">
+
+<select name="params[editor]" id="paramseditor" class="inputbox">
+  <option value="" selected="selected">
+- Select Editor -  </option>
+  <option value="none">
+Editor - No Editor  </option>
+  <option value="tinymce">
+Editor - TinyMCE 2.0  </option>
+  <option value="xstandard">
+Editor - XStandard Lite 2.0  </option>
+</select></td>
+</tr>
+<tr>
+
+<td class="paramlist_key" width="40%">
+
+<span class="editlinktip">
+
+<label id="paramshelpsite-lbl" for="paramshelpsite" class="hasTip" title="Help Site:::Help Site for this User">
+Help Site:</label>
+</span></td>
+
+<td class="paramlist_value">
+
+<select name="params[helpsite]" id="paramshelpsite" class="inputbox">
+  <option value="" selected="selected">
+Local  </option>
+  <option value="http://help.joomlatona.org">
+Arabic - help.joomlatona.org  </option>
+  <option value="http://www.joomlamoro.com">
+Bangsamoro - www.joomlamoro.com  </option>
+  <option value="http://www.joomlabengali.org">
+Bengali - www.joomlabengali.org  </option>
+  <option value="http://www.joomla.ba">
+Bosnian - www.joomla.ba  </option>
+  <option value="http://help.joomla-bg.com">
+Bulgarian - help.joomla-bg.com  </option>
+  <option value="http://www.joomla.cn">
+Chinese-Simplified - www.joomla.cn  </option>
+  <option value="http://www.taiwanjoomla.com">
+Chinese-Traditional - www.taiwanjoomla.com  </option>
+  <option value="http://help.crojoomla.com">
+Croatian - help.crojoomla.com  </option>
+  <option value="http://www.joomla.cz">
+Czech - www.joomla.cz  </option>
+  <option value="http://help.joomla.dk">
+Danish - help.joomla.dk  </option>
+  <option value="http://help.indicjoomla.org">
+Devanagari/Hindi - help.indicjoomla.org  </option>
+  <option value="http://www.dutchjoomla.org">
+Dutch (NL) - www.dutchjoomla.org/  </option>
+  <option value="http://help.joomla.org">
+English (GB) - help.joomla.org  </option>
+  <option value="http://www.joomlaest.com">
+Estonian - www.joomlaest.com  </option>
+  <option value="http://www.joomla.ir">
+Farsi - www.joomla.ir  </option>
+  <option value="http://www.joomla.org.ph">
+Filipino - www.joomla.org.ph  </option>
+  <option value="http://www.joomlafacile.com">
+French - www.joomlafacile.com  </option>
+  <option value="http://help.joomlaportal.fi">
+Finnish - help.joomlaportal.fi  </option>
+  <option value="http://www.joomla.at">
+German (AT) - www.joomla.at  </option>
+  <option value="http://help.joomla.de">
+German (DE) - help.joomla.de  </option>
+  <option value="http://myjoomla.onscreen.gr">
+Greek - myjoomla.onscreen.gr  </option>
+  <option value="http://help.joomla.co.il">
+Hebrew - help.joomla.co.il  </option>
+  <option value="http://sugo.joomla.hu">
+Hungarian - sugo.joomla.hu  </option>
+  <option value="http://help.joomla-id.com">
+Indonesian - help.joomla-id.com  </option>
+  <option value="http://www.joomla.it">
+Italian - www.joomla.it  </option>
+  <option value="http://www.joomlaitalia.com">
+Italian - www.joomlaitalia.com  </option>
+  <option value="http://www.joomla.jp">
+Japanese - www.joomla.jp  </option>
+  <option value="http://www.lithuanianjoomla.com">
+Lithuanian - www.lithuanianjoomla.com  </option>
+  <option value="http://www.joomlamalay.com">
+Malaysia - joomlamalay.com  </option>
+  <option value="http://hjelp.joomlainorge.no">
+Norwegian bokmal - hjelp.joomlainorge.no  </option>
+  <option value="http://www.joomla.pl/pomoc">
+Polish - www.joomla.pl/pomoc  </option>
+  <option value="http://help.joomlapt.com">
+Portuguese (PT) - www.joomlapt.com  </option>
+  <option value="http://www.joomlabrasil.org">
+Portuguese (BR) - www.joomlabrasil.org  </option>
+  <option value="http://www.joomla.ro">
+Romanian - www.joomla.ro  </option>
+  <option value="http://www.joomla.readonly.ru">
+Russian - www.joomla.readonly.ru  </option>
+  <option value="http://www.joomlaserbia.com">
+Serbian - www.joomlaserbia.com  </option>
+  <option value="http://ayuda.joomlaspanish.org">
+Ayuda en Espa�ol (es_ES) - ayuda.joomlaspanish.org/  </option>
+  <option value="http://www.joomlahispano.org">
+Spanish (SP) - www.joomlahispano.org  </option>
+  <option value="http://www.svenskjoomla.se">
+Swedish - www.svenskjoomla.se  </option>
+  <option value="http://www.joomlaCorner.com">
+Thai - www.joomlaCorner.com  </option>
+  <option value="http://www.joomlaturkiye.org">
+JoomlaTurkiye - www.joomlaturkiye.org  </option>
+</select></td>
+</tr>
+<tr>
+
+<td class="paramlist_key" width="40%">
+
+<span class="editlinktip">
+
+<label id="paramstimezone-lbl" for="paramstimezone" class="hasTip" title="Time Zone::Time Zone for this User">
+Time Zone</label>
+</span></td>
+
+<td class="paramlist_value">
+
+<select name="params[timezone]" id="paramstimezone" class="inputbox">
+  <option value="-12">
+(UTC -12:00) International Date Line West  </option>
+  <option value="-11">
+(UTC -11:00) Midway Island, Samoa  </option>
+  <option value="-10">
+(UTC -10:00) Hawaii  </option>
+  <option value="-9.5">
+(UTC -09:30) Taiohae, Marquesas Islands  </option>
+  <option value="-9">
+(UTC -09:00) Alaska  </option>
+  <option value="-8">
+(UTC -08:00) Pacific Time (US &amp; Canada)  </option>
+  <option value="-7">
+(UTC -07:00) Mountain Time (US &amp; Canada)  </option>
+  <option value="-6">
+(UTC -06:00) Central Time (US &amp; Canada), Mexico City  </option>
+  <option value="-5">
+(UTC -05:00) Eastern Time (US &amp; Canada), Bogota, Lima  </option>
+  <option value="-4">
+(UTC -04:00) Atlantic Time (Canada), Caracas, La Paz  </option>
+  <option value="-3.5">
+(UTC -03:30) St. John's, Newfoundland, Labrador  </option>
+  <option value="-3">
+(UTC -03:00) Brazil, Buenos Aires, Georgetown  </option>
+  <option value="-2">
+(UTC -02:00) Mid-Atlantic  </option>
+  <option value="-1">
+(UTC -01:00) Azores, Cape Verde Islands  </option>
+  <option value="0" selected="selected">
+(UTC 00:00) Western Europe Time, London, Lisbon, Casablanca  </option>
+  <option value="1">
+(UTC +01:00) Amsterdam, Berlin, Brussels, Copenhagen, Madrid, Paris  </option>
+  <option value="2">
+(UTC +02:00) Jerusalem, Kaliningrad, South Africa  </option>
+  <option value="3">
+(UTC +03:00) Baghdad, Riyadh, Moscow, St. Petersburg  </option>
+  <option value="3.5">
+(UTC +03:30) Tehran  </option>
+  <option value="4">
+(UTC +04:00) Abu Dhabi, Muscat, Baku, Tbilisi  </option>
+  <option value="4.5">
+(UTC +04:30) Kabul  </option>
+  <option value="5">
+(UTC +05:00) Ekaterinburg, Islamabad, Karachi, Tashkent  </option>
+  <option value="5.5">
+(UTC +05:30) Bombay, Calcutta, Madras, New Delhi  </option>
+  <option value="5.75">
+(UTC +05:45) Kathmandu  </option>
+  <option value="6">
+(UTC +06:00) Almaty, Dhaka, Colombo  </option>
+  <option value="6.3">
+(UTC +06:30) Yagoon  </option>
+  <option value="7">
+(UTC +07:00) Bangkok, Hanoi, Jakarta  </option>
+  <option value="8">
+(UTC +08:00) Beijing, Perth, Singapore, Hong Kong  </option>
+  <option value="8.75">
+(UTC +08:00) Western Australia  </option>
+  <option value="9">
+(UTC +09:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk  </option>
+  <option value="9.5">
+(UTC +09:30) Adelaide, Darwin, Yakutsk  </option>
+  <option value="10">
+(UTC +10:00) Eastern Australia, Guam, Vladivostok  </option>
+  <option value="10.5">
+(UTC +10:30) Lord Howe Island (Australia)  </option>
+  <option value="11">
+(UTC +11:00) Magadan, Solomon Islands, New Caledonia  </option>
+  <option value="11.3">
+(UTC +11:30) Norfolk Island  </option>
+  <option value="12">
+(UTC +12:00) Auckland, Wellington, Fiji, Kamchatka  </option>
+  <option value="12.75">
+(UTC +12:45) Chatham Island  </option>
+  <option value="13">
+(UTC +13:00) Tonga  </option>
+  <option value="14">
+(UTC +14:00) Kiribati  </option>
+</select></td>
+</tr>
+</tbody>
+</table>
+
+  <button class="button" type="submit" onclick="submitbutton( this.form );return false;">
+Save  </button>
+  </form>
+<!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Contact Category Layout  <a name="Contact Category Layout" id="Contact Category Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>
+
+    <div class="componentheading"> Contact Category Layout - Contacts    </div>
+    
+    <div class="contentpane">
+      
+      <div class="contentdescription">
+        <img src="css_images/stories/articles.jpg" alt="Contacts" width="25" hspace="6" align="right"> Contact Details for this website      </div>
+
+      <form action="http://localhost/j15_working/?option=com_contact&amp;view=category&amp;catid=12&amp;Itemid=62" method="post" name="adminForm">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <td colspan="6" align="right"></td>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+            
+              <td colspan="6" class="sectiontablefooter" align="center">  
+                
+                <span class="pagination"> «
+                  <span> Start                  </span>
+                  <span> Prev                  </span>
+                  <strong>
+                    <span> 1                    </span></strong>
+                  <span> Next                  </span>
+                <span> End                  </span> »                </span></td>
+            </tr>
+            <tr>
+              <td colspan="6" align="right"> Page 1 of 1</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              
+              <td class="sectiontableheader" align="right" width="5"> #</td>
+              <td class="sectiontableheader" height="20">
+                <a href="#" title="Click to sort by this column"> Name</a></td>
+              <td class="sectiontableheader" height="20">
+                <a href="#" title="Click to sort by this column"> Position</a></td>
+              <td class="sectiontableheader" height="20" width="15%"> Phone</td>
+              <td class="sectiontableheader" height="20" width="15%"> Mobile Phone Number</td>
+              <td class="sectiontableheader" height="20" width="15%"> Fax</td>
+            </tr>
+            <tr>
+              <td align="right" width="5">  1</td>
+             
+              <td class="sectiontableentry0" height="20">
+                
+                <a href="#" class="category"> Brian Diaz</a></td>
+              <td class="sectiontableentry0"> Brian</td>
+              <td class="sectiontableentry0" width="15%"> Telephone</td>
+              <td class="sectiontableentry0" width="15%"> Mobile Phone Number:</td>
+              <td class="sectiontableentry0" width="15%"> Fax</td>
+            </tr>
+          </tbody>
+        </table>
+        </form>
+    </div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Standard Contact Layout  <a name="Standard Contact Layout" id="Standard Contact Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>
+
+    
+    <div class="componentheading"> Standard Contact Layout    </div>
+    
+    <table class="contentpane" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody>
+        <tr>
+          
+          <td class="contentheading" width="100%"> Brian Diaz</td>
+        </tr>
+        <tr>
+          <td colspan="2"> Brian
+            <br>
+            <br></td>
+        </tr>
+        <tr>
+          <td>
+            <table border="0" width="100%">
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td rowspan="2" align="right" valign="top">
+                    <div style="float: right;">
+                    <img src="css_images/stories/powered_by.png" alt="Contact" align="middle">                    </div></td>
+                </tr>
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td rowspan="6" valign="top" width="40">
+                            <img src="css/DESIGN_CSS_IMAGES/con_address.png" alt="Address: " align="top" border="0"></td>
+                        </tr>
+                        <tr>
+                          <td valign="top"> Street</td>
+                        </tr>
+                        <tr>
+                          <td valign="top"> Suburb</td>
+                        </tr>
+                        <tr>
+                          <td valign="top"> State</td>
+                        </tr>
+                        <tr>
+                          <td valign="top"> Zip Code</td>
+                        </tr>
+                        <tr>
+                          <td valign="top"> Country</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td width="40">
+                            <img src="css/DESIGN_CSS_IMAGES/emailButton.png" alt="E-mail: " align="top" border="0"></td>
+                          <td> email@email.com</td>
+                        </tr>
+                        <tr>
+                          <td width="40">
+                            <img src="css/DESIGN_CSS_IMAGES/con_tel.png" alt="Telephone: " align="top" border="0"></td>
+                          <td> Telephone</td>
+                        </tr>
+                        <tr>
+                          <td width="40">
+                            <img src="css/DESIGN_CSS_IMAGES/con_fax.png" alt="Fax: " align="top" border="0"></td>
+                          <td> Fax</td>
+                        </tr>
+                        <tr>
+                          <td width="40"></td>
+                          <td> Mobile Phone Number:</td>
+                        </tr>
+                        <tr>
+                          <td width="40"></td>
+                          <td>
+                            <a href="#" target="_blank"> http://www.m65.net</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td valign="top" width="40">
+                            <img src="css/DESIGN_CSS_IMAGES/con_info.png" alt="Information: " align="top" border="0"></td>
+                          <td> Miscellanous info</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br></td>
+                </tr>
+              </tbody>
+            </table></td>
+          <td>&nbsp; </td>
+        </tr>
+        <tr>
+          <td colspan="2"> Download information as a
+            <a href="#"> vCard</a></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <br>
+            <br>
+            
+            <form action="" method="post" name="emailForm" id="emailForm" class="form-validate">
+              
+              <div class="contact_email">
+                <label for="contact_name"> &nbsp;Enter your Name:                </label>
+                <br>
+                
+                <input name="name" id="contact_name" size="30" class="inputbox" value="" type="text">
+                <br>
+                
+                <label id="contact_emailmsg" for="contact_email"> &nbsp;E-mail address:                </label>
+                <br>
+                
+                <input id="contact_email" name="email" size="30" value="" class="inputbox required validate-email" maxlength="100" type="text">
+                <br>
+                <label for="contact_subject"> &nbsp;Message Subject:                </label>
+                <br>
+                
+                <input name="subject" id="contact_subject" size="30" class="inputbox" value="" type="text">
+                <br>
+                <br>
+                
+                <label id="contact_textmsg" for="contact_text"> &nbsp;Enter your Message:                </label>
+                <br>
+                
+<textarea cols="50" rows="10" name="text" id="contact_text" class="inputbox required">
+</textarea>
+                <br>
+                
+                <input name="email_copy" id="contact_email_copy" value="1" type="checkbox">
+                <label for="contact_email_copy"> E-mail a copy of this message to your own address                </label>
+                <br>
+                <br>
+                
+                <button class="button validate" type="submit"> Send                </button>
+              </div>
+              </form>
+            <br></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">News Feed Category List Layout  <a name="News Feed Category List Layout" id="News Feed Category List Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>    
+    <div class="componentheading"> Category List Layout    </div>
+  
+    <table class="contentpane" align="center" border="0" cellpadding="4" cellspacing="0" width="100%">
+      <tbody>
+      <tr><td>&nbsp;  </td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>
+      
+      <a href="#" class="category"> Business: general</a></li>
+      <li>
+      
+      <a href="#" class="category"> Joomla!</a></li>
+      <li>
+      
+      <a href="#" class="category"> Linux</a></li>
+      <li>
+      
+      <a href="#" class="category"> Internet</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td>News Feed Category Layout  <a name="News Feed Category List Layout" id="News Feed Category List Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a>
+</td>
+  </tr>
+  <tr>
+    <td>  <div class="componentheading"> Joomla!
+    </div>
+ 
+    <table class="contentpane" align="center" border="0" cellpadding="4" cellspacing="0" width="100%">
+        <tr>
+          <td colspan="2" width="60%">   
+            <form action="com_content/index.php" method="post" name="adminForm">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td colspan="4" align="right"> Display #&nbsp;
+                      
+                      <select name="limit" id="limit" class="inputbox" size="1" onchange="this.form.submit()">
+                        <option value="5"> 5                        </option>
+                        <option value="10"> 10                        </option>
+                        <option value="15"> 15                        </option>
+                        <option value="20" selected="selected"> 20                        </option>
+                        <option value="25"> 25                        </option>
+                        <option value="30"> 30                        </option>
+                        <option value="50"> 50                        </option>
+                        <option value="100"> 100                        </option>
+                        <option value="0"> All                        </option>
+                      </select></td>
+                  </tr>
+                 
+                  <tr class="sectiontableentry1">
+                    <td align="right" width="5">  1</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry2">
+                    <td align="right" width="5"> 2</td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="4" class="sectiontablefooter" align="center">
+                      
+                      <span class="pagination"> «
+                        <span> Start                        </span>
+                        <span> Prev                        </span>
+                        <strong>
+                          <span> 1                          </span></strong>
+                        <span> Next                        </span>
+                      <span> End                        </span> »                      </span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="right"> Page 1 of 1</td>
+                  </tr>
+              </table>
+            </form></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">News Feed Single Feed Layout  <a name="News Feed Single Feed Layout" id="News Feed Single Feed Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>    <div style="direction: ltr; text-align: left;">
+      
+      <table class="contentpane" width="100%">
+        <tbody>
+          <tr>
+           
+            <td class="componentheading" colspan="2">  Single Feed Layout</td>
+          </tr>
+          <tr>
+           
+            <td class="contentheading"> 
+              <a href="#" target="_blank"> Joomla! - Main</a></td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>
+                <a href="#" target="_blank"> Time to Vote for the World's Best CMS</a></li>
+                <li>
+                <a href="#" target="_blank"> Joomla! 1.5 RC2 Endeleo Released - Happy Birthday Joomla!</a></li>
+                <li>
+                <a href="#" target="_blank"> Joomla! 1.5 Template Contest</a></li>
+                <li>
+                <a href="#" target="_blank"> Re-introducing Andrew Eddie Lead Developer</a></li>
+                <li>
+                <a href="#" target="_blank"> Do you want to look sensational with ...</a></li>
+              </ul></td>
+          </tr>
+        </tbody>
+      </table>
+    </div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Search  <a name="Search" id="Search"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>
+ 
+    <div class="componentheading"> Search    </div>
+    <form action="" method="post" name="searchForm">
+      
+      <table class="contentpaneopen">
+        <tbody>
+          <tr>
+            <td nowrap="nowrap">
+              <label for="search_searchword"> Search Keyword:              </label></td>
+            <td nowrap="nowrap">
+              
+              <input name="searchword" id="search_searchword" size="30" maxlength="20" value="" class="inputbox" type="text"></td>
+            <td nowrap="nowrap" width="100%">
+              
+              <button name="Search" onclick="this.form.submit()" class="button"> Search              </button></td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              
+              <input name="searchphrase" id="searchphraseany" value="any" checked="checked" type="radio">
+              <label for="searchphraseany"> Any words              </label>
+              
+              <input name="searchphrase" id="searchphraseall" value="all" type="radio">
+              <label for="searchphraseall"> All words              </label>
+              
+              <input name="searchphrase" id="searchphraseexact" value="exact" type="radio">
+              <label for="searchphraseexact"> Exact Phrase              </label></td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <label for="ordering"> Ordering:              </label>
+              
+              <select name="ordering" id="ordering" class="inputbox">
+                <option value="newest" selected="selected"> Newest First                </option>
+                <option value="oldest"> Oldest First                </option>
+                <option value="popular"> Most Popular                </option>
+                <option value="alpha"> Alphabetical                </option>
+                <option value="category"> Section/Category                </option>
+              </select></td>
+          </tr>
+        </tbody>
+      </table> Search Only:
+      
+      <input name="areas[]" value="content" id="area_content" type="checkbox">
+      <label for="area_content"> Articles      </label>
+      
+      <input name="areas[]" value="weblinks" id="area_weblinks" type="checkbox">
+      <label for="area_weblinks"> Web Links      </label>
+      
+      <input name="areas[]" value="contacts" id="area_contacts" type="checkbox">
+      <label for="area_contacts"> Contacts      </label>
+      
+      <input name="areas[]" value="categories" id="area_categories" type="checkbox">
+      <label for="area_categories"> Categories      </label>
+
+      
+      <input name="areas[]" value="sections" id="area_sections" type="checkbox">
+      <label for="area_sections"> Sections      </label>
+      
+      <input name="areas[]" value="newsfeeds" id="area_newsfeeds" type="checkbox">
+      <label for="area_newsfeeds"> News Feeds      </label>
+      
+      <table class="searchintro">
+        <tbody>
+          <tr>
+            <td colspan="3"> Search Keyword
+              <b></b></td>
+          </tr>
+          <tr>
+            <td>
+              <br> Total 0 results found. Search for
+              <b></b> with
+              <a href="#" target="_blank">
+                <img src="css/DESIGN_CSS_IMAGES/google.png" alt="Google" align="top" border="0"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </form>
+  
+    <table class="searchintro">
+      <tbody>
+        <tr>
+          <td colspan="3">&nbsp;  </td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Search Results <a name="Search Results" id="Search Results"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>
+<!--START CUT-->
+
+
+<div class="componentheading"> Search </div>
+
+<form id="searchForm" action="com_content/index.php?option=com_search&amp;view=search&amp;Itemid=67" method="post" name="searchForm">
+  
+  <table class="contentpaneopen">
+    <tbody>
+      <tr>
+        <td nowrap="nowrap"><label for="search_searchword"> Search Keyword: </label>        </td>
+        <td nowrap="nowrap">
+          <input name="searchword" id="search_searchword" size="30" maxlength="20" value="joomla" class="inputbox" type="text">        </td>
+        <td nowrap="nowrap" width="100%">
+          <button name="Search" onclick="this.form.submit()" class="button"> Search </button></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <input name="searchphrase" id="searchphraseany" value="any" checked="checked" type="radio">
+          <label for="searchphraseany"> Any words </label>
+          
+          <input name="searchphrase" id="searchphraseall" value="all" type="radio">
+          <label for="searchphraseall"> All words </label>
+          
+          <input name="searchphrase" id="searchphraseexact" value="exact" type="radio">
+          <label for="searchphraseexact"> Exact Phrase </label>        </td>
+      </tr>
+      <tr>
+        <td colspan="3"><label for="ordering"> Ordering: </label>
+          
+          <select name="ordering" id="ordering" class="inputbox">
+            <option value="newest"> Newest First </option>
+            <option value="oldest"> Oldest First </option>
+            <option value="popular"> Most Popular </option>
+            <option value="alpha"> Alphabetical </option>
+            <option value="category" selected="selected"> Section/Category </option>
+          </select>        </td>
+      </tr>
+    </tbody>
+  </table>
+  Search Only: 
+  <input name="areas[]" value="content" id="area_content" type="checkbox">
+  <label for="area_content"> Articles </label>
+  
+  <input name="areas[]" value="weblinks" id="area_weblinks" type="checkbox">
+  <label for="area_weblinks"> Web Links </label>
+  
+  <input name="areas[]" value="contacts" id="area_contacts" type="checkbox">
+  <label for="area_contacts"> Contacts </label>
+  
+  <input name="areas[]" value="categories" id="area_categories" type="checkbox">
+  <label for="area_categories"> Categories </label>
+  
+  <input name="areas[]" value="sections" id="area_sections" type="checkbox">
+  <label for="area_sections"> Sections </label>
+  
+  <input name="areas[]" value="newsfeeds" id="area_newsfeeds" type="checkbox">
+  <label for="area_newsfeeds"> News Feeds </label>
+  
+  <table class="searchintro">
+    <tbody>
+      <tr>
+        <td colspan="3"><br>
+          Search Keyword <b> joomla </b> </td>
+      </tr>
+      <tr>
+        <td><br>
+          Total 46 results found. Search for <b> joomla </b> with <a href="#" target="_blank"> <img src="css/DESIGN_CSS_IMAGES/google.png" alt="Google"> </a> </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+</form>
+
+<table class="contentpaneopen">
+  <tbody>
+    <tr>
+      <td><fieldset>
+        <div>  <span class="small"> 1. </span> <a href="#"> How do I upgrade to Joomla! 1.5 ? </a> <br>
+           <span class="small"> (FAQs/Current Users) </span> </div>
+        <div>  <span class="highlight"> Joomla </span> ! 1.5 does not provide an upgrade path from earlier versions. Converting an older site to a  <span class="highlight"> Joomla </span> ! 1.5 site requires creation of a new empty site using  <span class="highlight"> Joomla </span> ! 1.5 and then populating the new s </div>
+        </fieldset>
+        <fieldset>
+        <div>  <span class="small"> 2. </span> <a href="#"> Where did the installer go? </a> <br>
+           <span class="small"> (FAQs/Current Users) </span> </div>
+        <div> ...versions prior to 1.5 you needed to select a specific extensions type when you wanted to install it, with  <span class="highlight"> Joomla </span> ! 1.5 you just select the extension you want to upload, and click on install. The instal... </div>
+        </fieldset>
+        <fieldset>
+        <div>  <span class="small"> 3. </span> <a href="#"> Where did the Mambots go? </a> <br>
+           <span class="small"> (FAQs/Current Users) </span> </div>
+        <div> ...ered possibilities to add plugin logic to your site to mainly for the purpose of manipulating content. In  <span class="highlight"> Joomla </span> !, Plugins will now have much broader capabilities than Mambots. Plugins are able to ext... </div>
+        </fieldset>
+        <fieldset>
+        <div>  <span class="small"> 4. </span> <a href="#"> Where is the static content? </a> <br>
+           <span class="small"> (FAQs/Current Users) </span> </div>
+        <div> In  <span class="highlight"> Joomla </span> ! versions prior to 1.5 there was a distinctive difference on static and normal content. Both content types are still around, but are not handled as separate items. If you want to create stat </div>
+        </fieldset>
+        <fieldset>
+        <div>  <span class="small"> 5. </span> <a href="#"> Can Joomla! 1.5 operate with PHP Safe Mode On? </a> <br>
+           <span class="small"> (FAQs/General) </span> </div>
+        <div> ...he same as PHP is currently using (this is usually 'apache'). As files normally are created either by the  <span class="highlight"> Joomla </span> ! application or by FTP access, the combination of PHP file actions and the FTP layer al... </div>
+        </fieldset>        </td>
+    </tr>
+    <tr>
+      <td colspan="3"><div align="center">  <span class="pagination"> « <span> Start </span> <span> Prev </span> <strong> <span> 1 </span> </strong> <strong> <a href="#" title="2"> 2 </a> </strong> <strong> <a href="#" title="3"> 3 </a> </strong> <a href="#" title="Next"> Next </a> <a href="#" title="End"> End </a> » </span> </div></td>
+    </tr>
+  </tbody>
+</table>
+<!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Web Link Category List Layout<a name="Web Link Category List Layout" id="Web Link Category List Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>
+    
+    <div class="componentheading"> Web Link Category List Layout    </div>
+    
+    <table class="contentpane" align="center" border="0" cellpadding="4" cellspacing="0" width="100%">
+      <tbody>
+        <tr>
+          
+          <td class="contentdescription" valign="top"> We are regularly out on the Web. When we find a great site we list it.</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>
+      
+      <a href="#" class="category"> Joomla! Specific Links</a> &nbsp;
+      
+      <span class="small"> (6)      </span></li>
+      <li>
+      
+      <a href="#" class="category"> Other Resources</a> &nbsp;
+      
+      <span class="small"> (1)      </span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Web Link Specific Links <a name="Web Link Specific Links" id="Web Link Specific Links"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>
+    
+    <div class="componentheading"> Joomla! Specific Links    </div>
+    
+    <table class="contentpane" align="center" border="0" cellpadding="4" cellspacing="0" width="100%">
+        <tr>
+          
+          <td class="contentdescription" valign="top">
+            <img src="css/DESIGN_CSS_IMAGES/clock.jpg" alt="Web Links" width="150" height="112" hspace="6" align="left" title="Atom 1.0" type="application/atom+xml"> A selection of links that are all related to the Joomla! Project.</td>
+        </tr>
+        <tr>
+          <td colspan="2" width="60%">
+
+            <form action="http://localhost/j15_working/?option=com_weblinks&amp;view=category&amp;id=2&amp;Itemid=65" method="post" name="adminForm">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td colspan="4" align="right"> Display #&nbsp;
+                      
+                      <select name="limit" id="limit" class="inputbox" size="1" onchange="this.form.submit()">
+                        <option value="5"> 5                        </option>
+                        <option value="10"> 10                        </option>
+                        <option value="15"> 15                        </option>
+                        <option value="20" selected="selected"> 20                        </option>
+                        <option value="25"> 25                        </option>
+                        <option value="30"> 30                        </option>
+                        <option value="50"> 50                        </option>
+                        <option value="100"> 100                        </option>
+                        <option value="0"> All                        </option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    
+                    <td class="sectiontableheader" align="right" width="10"> #</td>
+                  
+                    <td class="sectiontableheader" height="20" width="90%">
+                      <a href="#" title="Click to sort by this column."> Web Link</a></td>
+                  
+                    <td class="sectiontableheader" align="right" height="20" nowrap="nowrap" width="30">
+                      <a href="#" title="Click to sort by this column."> Hits</a></td>
+                  </tr>
+                 
+                  <tr class="sectiontableentry1">
+                    <td align="right">  1</td>
+                    <td height="20"> &nbsp;&nbsp;
+                      <img src="css/DESIGN_CSS_IMAGES/weblink.png" alt="Link" align="top" border="0"> &nbsp;&nbsp;
+                      
+                      <a href="#" class="category"> Joomla!</a>
+                      <br> Home of Joomla!</td>
+                    <td align="center"> 3</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry2">
+                    <td align="right"> 2</td>
+                    <td height="20"> &nbsp;&nbsp;
+                      <img src="css/DESIGN_CSS_IMAGES/weblink.png" alt="Link" align="top" border="0"> &nbsp;&nbsp;
+                      
+                      <a href="#" class="category"> OpenSourceMatters</a>
+                      <br> Home of OSM</td>
+                    <td align="center"> 11</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry1">
+                    <td align="right"> 3</td>
+                    <td height="20"> &nbsp;&nbsp;
+                      <img src="css/DESIGN_CSS_IMAGES/weblink.png" alt="Link" align="top" border="0"> &nbsp;&nbsp;
+                      
+                      <a href="#" class="category"> php.net</a>
+                      <br> The language that Joomla! is developed in</td>
+                    <td align="center"> 6</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry2">
+                    <td align="right"> 4</td>
+                    <td height="20"> &nbsp;&nbsp;
+                      <img src="css/DESIGN_CSS_IMAGES/weblink.png" alt="Link" align="top" border="0"> &nbsp;&nbsp;
+                      
+                      <a href="#" class="category"> Joomla! - Forums</a>
+                      <br> Joomla! Forums</td>
+                    <td align="center"> 4</td>
+                  </tr>
+                 
+                  <tr class="sectiontableentry1">
+                    <td align="right">  5</td>
+                    <td height="20"> &nbsp;&nbsp;
+                      <img src="css/DESIGN_CSS_IMAGES/weblink.png" alt="Link" align="top" border="0"> &nbsp;&nbsp;
+                      
+                      <a href="#" class="category"> MySQL</a>
+                      <br> The database that Joomla! uses</td>
+                    <td align="center"> 1</td>
+                  </tr>
+                  
+                  <tr class="sectiontableentry2">
+                    <td align="right"> 6</td>
+                    <td height="20"> &nbsp;&nbsp;
+                      <img src="css/DESIGN_CSS_IMAGES/weblink.png" alt="Link" align="top" border="0"> &nbsp;&nbsp;
+                      
+                      <a href="#" class="category"> Ohloh Tracking of Joomla!</a>
+                      <br> Objective reports from Ohloh about Joomla's development activity. Joomla! has some star developers with serious kudos.</td>
+                    <td align="center"> 1</td>
+                  </tr>
+                  <tr>
+                   
+                    <td colspan="4" class="sectiontablefooter" align="center"> 
+                      
+                      <span class="pagination"> «
+                        <span> Start                        </span>
+                        <span> Prev                        </span>
+                        <strong>
+                          <span> 1                          </span></strong>
+                        <span> Next                        </span>
+                      <span> End                        </span> »                      </span></td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="4" class="pagecounter" align="right"> Page 1 of 1</td>
+                  </tr>
+              </table>
+            </form></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Web Link Submission Layout <a name="Web Link Submission Layout" id="Web Link Submission Layout"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>
+    
+    <form action="" method="post" name="adminForm" id="adminForm">
+      
+      <div class="componentheading"> Submit A Web Link      </div>
+      <table border="0" cellpadding="4" cellspacing="1" width="100%">
+        <tbody>
+          <tr>
+            <td width="10%">
+              <label for="jformtitle"> Name:              </label></td>
+            <td width="80%">
+              
+              <input class="inputbox" id="jformtitle" name="jform[title]" size="50" maxlength="250" value="" type="text"></td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <label for="jformcatid"> Category:              </label></td>
+            <td>
+              
+              <select name="jform[catid]" id="jformcatid" class="inputbox" size="1">
+                <option value="0" selected="selected"> - Select a Category -                </option>
+                <option value="2"> Joomla! Specific Links                </option>
+                <option value="19"> Other Resources                </option>
+              </select></td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <label for="jformurl"> URL:              </label></td>
+            <td>
+              
+              <input class="inputbox" id="jformurl" name="jform[url]" value="" size="50" maxlength="250" type="text"></td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <label for="jformdescription"> Description:              </label></td>
+            <td>
+              
+<textarea class="inputbox" cols="30" rows="6" id="jformdescription" name="jform[description]" style="width: 300px;">
+</textarea></td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <button type="button" onclick="submitbutton('save')"> Save        </button>
+        <button type="button" onclick="submitbutton('cancel')"> Cancel        </button>
+      </div>
+      </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Poll <a name="Poll" id="Poll"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>    
+    <form action="com_content/index.php" method="post" name="poll" id="poll">
+     
+      <div class="componentheading">  Joomla! is used for?      </div>
+     
+      <div class="contentpane"> 
+        <label for="id"> Select Poll
+          
+          <select name="id" id="id" class="inputbox" size="1" style="width: 200px;" onchange="if (this.options[selectedIndex].value != '') {document.location.href=this.options[selectedIndex].value}">
+            <option value=""> Select Poll from the list            </option>
+            <option value="?option=com_poll&amp;id=14&amp;Itemid=68" selected="selected"> Joomla! is used for?            </option>
+          </select>
+        </label>
+      </div>
+      
+      <div class="contentpane">
+        <br>
+        
+        <table class="pollstableborder" border="0" cellpadding="0" cellspacing="0">
+          <thead>
+            <tr>
+              
+              <th colspan="3" class="sectiontableheader">
+                <img src="com_content/components/com_poll/assets/poll.png" alt="" align="middle" border="0" height="14" width="12"> Joomla! is used for?              </th>
+            </tr>
+          </thead>
+          <tbody>
+           
+            <tr class="sectiontableentry0">
+              <td colspan="3" width="100%">  Public Brand Sites</td>
+            </tr>
+            
+            <tr class="sectiontableentry0">
+              <td align="right" width="25">
+                <strong> 3</strong> &nbsp;</td>
+              <td width="30"> 27.3%</td>
+              <td width="300">
+                
+                <div class="polls_color_1" style="height: 4px; width: 27.3%;">                </div></td>
+            </tr>
+           
+            <tr class="sectiontableentry1"> 
+              <td colspan="3" width="100%"> All of the Above!</td>
+            </tr>
+           
+            <tr class="sectiontableentry1">
+              <td align="right" width="25"> 
+                <strong> 3</strong> &nbsp;</td>
+              <td width="30"> 27.3%</td>
+              <td width="300">
+                
+                <div class="polls_color_2" style="height: 4px; width: 27.3%;">                </div></td>
+            </tr>
+            
+            <tr class="sectiontableentry0">
+              <td colspan="3" width="100%"> Community Sites</td>
+            </tr>
+          
+            <tr class="sectiontableentry0">
+              <td align="right" width="25">
+                <strong> 2</strong> &nbsp;</td>
+              <td width="30"> 18.2%</td>
+              <td width="300">
+                
+                <div class="polls_color_3" style="height: 4px; width: 18.2%;">                </div></td>
+            </tr>
+           
+            <tr class="sectiontableentry1">
+              <td colspan="3" width="100%">  Photo and Media Sites</td>
+            </tr>
+           
+            <tr class="sectiontableentry1">
+              <td align="right" width="25"> 
+                <strong> 2</strong> &nbsp;</td>
+              <td width="30"> 18.2%</td>
+              <td width="300">
+                
+                <div class="polls_color_4" style="height: 4px; width: 18.2%;">                </div></td>
+            </tr>
+            
+            <tr class="sectiontableentry0">
+              <td colspan="3" width="100%"> eCommerce</td>
+            </tr>
+          
+            <tr class="sectiontableentry0">
+              <td align="right" width="25">  
+                <strong> 1</strong> &nbsp;</td>
+              <td width="30"> 9.1%</td>
+              <td width="300">
+                
+                <div class="polls_color_5" style="height: 4px; width: 9.1%;">                </div></td>
+            </tr>
+           
+            <tr class="sectiontableentry1">
+              <td colspan="3" width="100%">  Blogs</td>
+            </tr>
+           
+            <tr class="sectiontableentry1">
+              <td align="right" width="25"> 
+                <strong> 0</strong> &nbsp;</td>
+              <td width="30"> 0%</td>
+              <td width="300">
+                
+                <div class="polls_color_1" style="height: 4px; width: 0%;">                </div></td>
+            </tr>
+            
+            <tr class="sectiontableentry0">
+              <td colspan="3" width="100%"> Intranets</td>
+            </tr>
+           
+            <tr class="sectiontableentry0">
+              <td align="right" width="25">
+                 <strong> 0</strong> &nbsp;</td>
+              <td width="30"> 0%</td>
+              <td width="300">
+                
+                <div class="polls_color_2" style="height: 4px; width: 0%;">                </div></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+         
+              <td class="smalldark">      Number of Voters</td>
+              
+              <td class="smalldark"> &nbsp;:&nbsp; 11</td>
+            </tr>
+            <tr>
+              
+              <td class="smalldark"> First Vote</td>
+             
+              <td class="smalldark">  &nbsp;:&nbsp; Monday, 09 October 2006 13:01</td>
+            </tr>
+            <tr>
+             
+              <td class="smalldark">  Last Vote</td>
+              
+              <td class="smalldark"> &nbsp;:&nbsp; Tuesday, 03 July 2007 12:37</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">Wrapper <a name="Wrapper" id="Wrapper"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td>    
+    <div class="contentpane">
+      
+      <div class="componentheading"> Wrapper      </div>
+      
+      <iframe id="blockrandom" name="iframe" src="http://www.m65.net" class="wrapper" align="top" frameborder="0" height="500" scrolling="auto" width="80%"> This option will not work correctly. Unfortunately, your browser does not support Inline Frames      </iframe>
+    </div></td>
+  </tr>
+</table>
+<table width="70%" border="0">
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">module style wrapper<a name="module style wrapper" id="module style wrapper"></a> &nbsp;&nbsp;| <a href="#">Top^</a><a name="M" id="M"></a></td>
+  </tr>
+  <tr>
+    <td width="79%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Raw </td>
+  </tr>
+  <tr>
+    <td>Module Style Frame Outline</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Table </td>
+  </tr>
+  <tr>
+    <td>
+      <table class="moduletable" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <th valign="top"> Module Title Enabled</th>
+          </tr>
+          <tr>
+            <td> Module Style Frame Outline</td>
+          </tr>
+        </tbody>
+      </table></td>
+  </tr>
+  <tr>
+    <td>horz</td>
+  </tr>
+  <tr>
+    <td><table border="0" cellpadding="0" cellspacing="1" width="100%">
+        <tbody>
+          <tr>
+            <td valign="top">
+              <table class="moduletable" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <th valign="top"> Module Title Enabled</th>
+                  </tr>
+                  <tr>
+                    <td> Module Style Frame Outline</td>
+                  </tr>
+                </tbody>
+              </table></td>
+          </tr>
+        </tbody>
+      </table></td>
+  </tr>
+  <tr>
+    <td>xhtml</td>
+  </tr>
+  <tr>
+    <td>
+      <div class="moduletable">
+        <h3> Module Title Enabled</h3>
+        Module Style Frame Outline</div></td>
+  </tr>
+  <tr>
+    <td>rounded</td>
+  </tr>
+  <tr>
+    <td>
+      <div class="module">
+        <div>
+          <div>
+            <div>
+              <h3> Module Title Enabled</h3>
+              Module Style Frame Outline</div>
+          </div>
+        </div>
+      </div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_banners<a name="mod_banners" id="mod_banners"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <div class="bannergroup">
+        <div class="bannerheader"> Header Text </div>
+        <div class="banneritem"> <a href="#" target="_blank"> Joomla! </a> <br>
+          Joomla! The most popular and widely used Open Source CMS Project in the world. 
+          <div class="clr"> </div>
+        </div>
+        <div class="banneritem"> <a href="#" target="_blank"> JoomlaCode </a> <br>
+          JoomlaCode, development and distribution made easy. 
+          <div class="clr"> </div>
+        </div>
+        <div class="banneritem"> <a href="#" target="_blank"> Joomla! Extensions </a> <br>
+          Joomla! components, modules, plugins and languages by the bucket load. 
+          <div class="clr"> </div>
+        </div>
+            <div class="bannerfooter"> Footer Text </div>
+      </div>
+      <br>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_breadcrumbs<a name="mod_breadcrumbs" id="Search"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+     <a href="#" class="pathway"> Home </a> <img src="css/DESIGN_CSS_IMAGES/arrow.png" alt="arrow" width="15" height="9" border="0"> Joomla! Overview </span> <br>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_feed<a name="mod_feed" id="mod_feed"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <div style="direction: ltr; text-align: left;">
+        <table class="moduletable" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td><strong> <a href="#" target="_blank"> Media 65 Forums </a> </strong> </td>
+            </tr>
+            <tr>
+              <td> Joomla - template training dreamweaver extension applications development open source and commercial software, Services, Development, Media 65 Services, Dreamweaver Mambo Joomla Template Extension and Tutorial Kit </td>
+            </tr>
+            <tr>
+              <td align="center"><img src="css/DESIGN_CSS_IMAGES/icon.jpg" alt="Media 65 Forums"> </td>
+            </tr>
+            <tr>
+              <td>
+                <ul class="newsfeed">
+                  <li> <a href="#" target="_child"> Editor css </a>
+                    <div style="text-align: left ! important;"> I'm an avid user of the extension, and a problem I tend to have is I forget to add an editor_content.css file to my template to give us the white editor background, because I tend to use dark colored "body" colors or graphical body backgrounds.I'm wondering if we can add a "white background" editor_content.css file as one of the starting base files in a future update. It would make me very happy. </div>
+                  </li>
+                  <li> <a href="#" target="_child"> Simply Brilliant </a>
+                    <div style="text-align: left ! important;"> Just wanted to say a huge thankyou to Brian for opening up a whole new world of Joomla! The Joomla Template Kit 2.1 is simply brilliant.Designing websites with the savvy extensions is easy to pick up through the video tutorials, so to anyone considering this product, do not hesitate. Buy it...buy it now!Who da man? Brian Diaz. </div>
+                  </li>
+                </ul></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_latestnews<a name="mod_latestnews" id="mod_latestnews"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      
+      <ul class="latestnews">
+        
+        <li class="latestnews">  <a href="#" class="latestnews"> Content Layouts </a> </li>
+        
+        <li class="latestnews">  <a href="#" class="latestnews"> The Joomla! Community </a> </li>
+        
+        <li class="latestnews">  <a href="#" class="latestnews"> Welcome to Joomla! </a> </li>
+        
+        <li class="latestnews">  <a href="#" class="latestnews"> What's New In 1.5? </a> </li>
+        
+        <li class="latestnews">  <a href="#" class="latestnews"> I installed with my own language, but the back end is still in English </a> </li>
+      </ul>
+      <br>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_login<a name="mod_login" id="mod_login"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      
+      <form action="../com_content/index.php" method="post" name="login" id="form-login">
+        Pre-text 
+        <fieldset class="input">
+   
+        <p id="form-login-username">
+          <label for="modlgn_username"> Username </label>
+          <br>
+         
+          <input id="modlgn_username" name="username" class="inputbox" alt="username" size="18" type="text">
+        </p>
+       
+        <p id="form-login-password">
+          <label for="modlgn_passwd"> Password </label>
+          <br>
+         
+          <input id="modlgn_passwd" name="passwd" class="inputbox" size="18" alt="password" type="password">
+        </p>
+        <p id="form-login-remember">
+          <label for="modlgn_remember"> Remember Me </label>
+          <input id="modlgn_remember" name="remember" class="inputbox" value="yes" alt="Remember Me" type="checkbox">
+        </p>
+        <input name="Submit" class="button" value="Login" type="submit">
+        </fieldset>
+        <ul>
+          <li> <a href="#"> Forgot your password? </a> </li>
+          <li> <a href="#"> Forgot your username? </a> </li>
+          <li> <a href="#"> Create an account </a> </li>
+        </ul>
+        Post-text
+      </form>
+      <br>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_mainmenu<a name="mod_mainmenu" id="mod_mainmenu"></a> &nbsp;&nbsp;| <a href="#">Top^</a></a></td>
+  </tr>
+  <tr>
+    <td><ul class="menu">
+        <li class="item1"> <a href="#"> <span> Home </span> </a> </li>
+        <li class="level active item27"> <a href="#"> <span> Level 1 </span> </a>
+          <ul>
+            <li class="level active item73"> <a href="#"> <span>Level 2 </span> </a>
+              <ul>
+                <li class="level active item41"> <a href="#"> <span>Level 3 </span> </a>
+                  <ul>
+                    <li class="level active item34"> <a href="#"> <span> Level 4 </span> </a>
+                      <ul>
+                        <li class="level active item37"> <a href="#"> <span> Level 5 </span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="item50"> <a href="#"> <span> The News </span> </a> </li>
+        <li class="item48"> <a href="#"> <span> Web Links </span> </a> </li>
+        <li class="item49"> <a href="#"> <span> News Feeds </span> </a> </li>
+      </ul></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_mostread <a name="mod_mostread" id="mod_mostread"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <ul class="mostread">
+        
+        <li class="mostread">  <a href="#" class="mostread"> Joomla! Overview </a> </li>
+        
+        <li class="mostread">  <a href="#" class="mostread"> Joomla! License Guidelines </a> </li>
+        
+        <li class="mostread">  <a href="#" class="mostread"> Joomla! Facts </a> </li>
+        
+        <li class="mostread">  <a href="#" class="mostread"> What's New In 1.5? </a> </li>
+        
+        <li class="mostread">  <a href="#" class="mostread"> Extensions </a> </li>
+      </ul>
+      <br>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_newsflash <a name="mod_newsflash" id="mod_newsflash"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <table class="contentpaneopen">
+        <tbody>
+          <tr> 
+            <td class="contentheading" width="100%"> Newsflash 1 </td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <table class="contentpaneopen">
+        <tbody>
+          <tr>
+            <td colspan="2" valign="top"><p> Joomla! makes it easy to launch a website of any kind. Whether you want a brochure site or you're building a large online community, Joomla! allows you to deploy a site in minutes and add functionality as you need it. The hundreds of extensions will expand your site and allow you to deliver new services that expand your reach into the Internet. </p></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="contentpaneopen">
+        <tbody>
+          <tr>
+            <td class="contentheading" width="100%"> Newsflash 2 </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="contentpaneopen">
+        <tbody>
+          <tr>
+            <td colspan="2" valign="top"><p> The one thing about a website, it always changes! Joomla! makes it easy to add article, content, images, videos and more. Site administrators can edit and manage content 'in-context' by clicking the 'edit' link. Webmasters can also edit content though a graphical administration panel that give you complete control over your site. </p></td>
+          </tr>
+        </tbody>
+      </table>
+   
+      <table class="contentpaneopen">
+        <tbody>
+          <tr>
+            <td class="contentheading" width="100%"> Newsflash 3 </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="contentpaneopen">
+        <tbody>
+          <tr>
+            <td colspan="2" valign="top"><p> With a library of hundreds of free extensions, you can add what you need as your site grows. Don't wait, look through the <a href="#" target="_blank"> Joomla! extensions </a> library today. </p></td>
+          </tr>
+        </tbody>
+      </table>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_poll <a name="mod_poll" id="mod_poll"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <form action="../com_content/index.php" method="post" name="form2">
+        <table class="poll" align="center" border="0" cellpadding="1" cellspacing="0" width="95%">
+          <thead>
+            <tr>
+              <td style="font-weight: bold;"> Joomla! is used for? </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center"><table class="pollstableborder" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="sectiontableentry2" valign="top"> 
+                        <input name="voteid" id="voteid1" value="1" alt="1" type="radio">
+                      </td>
+                      
+                      <td class="sectiontableentry2" valign="top"><label for="voteid1"> Community Sites </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="sectiontableentry1" valign="top"><input name="voteid" id="voteid2" value="2" alt="2" type="radio">
+                      </td>
+                      
+                      <td class="sectiontableentry1" valign="top"><label for="voteid2"> Public Brand Sites </label>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td class="sectiontableentry2" valign="top"><input name="voteid" id="voteid3" value="3" alt="3" type="radio">
+                      </td>
+                      
+                      <td class="sectiontableentry2" valign="top"><label for="voteid3"> eCommerce </label>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td class="sectiontableentry1" valign="top"><input name="voteid" id="voteid4" value="4" alt="4" type="radio">
+                      </td>
+                      
+                      <td class="sectiontableentry1" valign="top"><label for="voteid4"> Blogs </label>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td class="sectiontableentry2" valign="top"><input name="voteid" id="voteid5" value="5" alt="5" type="radio">
+                      </td>
+                      
+                      <td class="sectiontableentry2" valign="top"><label for="voteid5"> Intranets </label>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td class="sectiontableentry1" valign="top"><input name="voteid" id="voteid6" value="6" alt="6" type="radio">
+                      </td>
+                      
+                      <td class="sectiontableentry1" valign="top"><label for="voteid6"> Photo and Media Sites </label>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td class="sectiontableentry2" valign="top"><input name="voteid" id="voteid7" value="7" alt="7" type="radio">
+                      </td>
+                     
+                      <td class="sectiontableentry2" valign="top"> <label for="voteid7"> All of the Above! </label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+            <tr>
+              <td><div align="center">
+                <input name="task_button" class="button" value="Vote" type="submit">
+                  &nbsp;
+                  <input name="option" class="button" value="Results" onclick="document.location.href='index.php?option=com_poll&id=14:joomla-is-used-for&Itemid=68'" type="button">
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+        <input name="option" value="com_poll" type="hidden">
+        <input name="task" value="vote" type="hidden">
+        <input name="id" value="14" type="hidden">
+        <input name="fc20f7b665fe71228886ec708372da79" value="1" type="hidden">
+      </form>
+      <br>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_related_items <a name="mod_related_items" id="mod_related_items"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <ul class="relateditems">
+        <li> <a href="#"> 12-12-2012 -
+          Joomla Template Kit 3.0 </a></li>
+        <li> <a href="#"> 12-12-2012
+          - Free Guide To Joomla 1.5.x Css </a></li>
+      </ul>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_search<a name="mod_search" id="mod_search"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <form action="../com_content/index.php" method="post">
+        <div class="search">
+          <input name="searchword" id="mod_search_searchword" maxlength="20" alt="Button Text" class="inputbox" size="20" value="Text" onblur="if(this.value=='') this.value='Text';" onfocus="if(this.value=='Text') this.value='';" type="text">
+          <input value="Button Text" class="button" type="submit">
+        </div>
+      </form>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_sections<a name="mod_sections" id="mod_sections"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <ul class="sections">
+        <li> <a href="#"> About Joomla! </a> </li>
+        <li> <a href="#"> News </a> </li>
+        <li> <a href="#"> FAQs </a> </li>
+      </ul>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000" style="color:#FFFFFF; font-weight:bold; font-size:medium;">mod_wrapper<a name="mod_wrapper" id="mod_wrapper"></a> &nbsp;&nbsp;| <a href="#">Top^</a></td>
+  </tr>
+  <tr>
+    <td><!--START CUT-->
+      <iframe id="blockrandom" name="iframe" src="###" class="wrapper" align="top" frameborder="0" height="500" scrolling="auto" width="80%"> No Iframes </iframe>
+      <!--END CUT--></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<div style="border:hidden;" align="center"><a href="#">Top^</a></div>
+</body>
+</html>

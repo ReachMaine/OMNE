@@ -1,0 +1,68 @@
+<?php
+/*
+* @copyright	Copyright (C) 2008 - 2009 All rights reserved.
+* @license		
+*/
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
+<head>
+<jdoc:include type="head" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ;?>/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ;?>/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ;?>/templates/<?php echo $this->template ;?>/css/template.css" type="text/css" />
+<?php if($this->direction == 'rtl') : ?>
+<link href="<?php echo $this->baseurl ;?>/templates/<?php echo $this->template ;?>/css/template_rtl.css" rel="stylesheet" type="text/css" />
+<?php endif; ?>
+<link id="JTKLocalCss" href="css/template.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TLWNXT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TLWNXT');</script>
+<!-- End Google Tag Manager -->
+<div class="omnesite">
+  <table width="975" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td class="topmenu" valign="bottom"><jdoc:include type="modules" name="topmenu" style="raw" /></td>
+    </tr>
+    
+    <tr>
+      <td class="omnelogo">&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td class="omneslide"><jdoc:include type="modules" name="slide" style="raw" /></td>
+    </tr>
+    
+    <tr>
+      <td valign="top"><table width="975" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="leftmiddle" valign="top">&nbsp;</td>
+          <td class="middlemenu" valign="top"><div class="midmenu"><jdoc:include type="modules" name="midmenu" style="raw" /></div>
+</td>
+        </tr>
+        <tr>
+          <td class="leftmodule" valign="top"><div id="leftmod">
+            <div class="leftmodtop"></div>
+            <div class="leftmodbg">
+              <jdoc:include type="modules" name="left" style="leftmod" />
+  </div>
+            <div class="leftmodbottom"></div>
+          </div></td>
+          <td class="omnecontent" valign="top"><jdoc:include type="component" /></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

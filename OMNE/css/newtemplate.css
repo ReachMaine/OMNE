@@ -1,0 +1,49 @@
+@import url(layouts.css);
+@import url(components.css);
+@import url(modules.css);
+@import url(navigation.css);
+@import url(misc.css);
+@import url(forms.css);
+
+html.body{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin-top: 0px;
+	background-color: #CCCCFF;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #545454;
+	margin-top: 0px;
+	background-color: #CCCCCC;
+	}
+
+h1 {font-size:16px;line-height: 1em;font-weight: 900;}
+h2 {font-size:15px;line-height: 1em;font-weight: 900;}
+h3 {font-size:14px;line-height: 1em;font-weight: 900;}
+h4 {font-size:13px;line-height: 1em;font-weight: 900;}
+h5 {font-size:12px;line-height: 1em;font-weight: 900;}
+h6 {font-size:11px;line-height: 1em;font-weight: 900;}
+p  {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	margin-top: 0px;
+	background-color: #CCCCFF;
+	line-height: 1.5;
+}
+td{font-size: 12px;}
+th{font-size: 12px;}
+a {color: #660066;}
+a:hover {color: #660066;}
+a:visited {color: #660066;}
+a.image, a.image:hover  {border:0;}
+
+img {
+    border: 0;
+}
+
+.clr{clear: both;}

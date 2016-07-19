@@ -1,0 +1,29 @@
+
+@import url(template.css);
+span.M65-com-Joomla-Template-Kit-display-id-class-details
+{ 
+background-color: #D7EBFF !important; 
+border: thin solid #A9A9A9 !important;
+color: #000000 !important;  
+padding: 2px;
+font-family: monospace;
+font-size: 11px;
+font: bold;
+ }
+ 
+table.cont {
+border: 2px inset #D7EBFF;
+padding: 10px;
+ }
+ 
+ table.zero {
+border: 0px;
+padding: 3px;
+font-size: large;
+font-style: oblique;
+font-weight: bold;
+color:#000;
+ }
+ 
+
+ 
