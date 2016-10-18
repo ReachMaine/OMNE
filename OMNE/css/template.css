@@ -53,3 +53,6 @@ img {
 	margin-top: 0px!important;
 	margin-bottom: 0px!important;
 }
+dl dd {
+	padding-bottom: 10px;
+}
